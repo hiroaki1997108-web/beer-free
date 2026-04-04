@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title></title>
+
+    <link rel="stylesheet" href="common/css/reset.css" />
+    <link rel="stylesheet" href="common/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.wavify.js"></script>
+    <script src="common/js/action.js" defer></script>
+  </head>
+
+  <body ontouchstart="">
+    <header></header>
+    <main>
+      <section id="mv">
+        <div class="mv-wrap">
+          <div class="mv-top">
+            <img src="common/images/mv-bg.png" alt="" class="mv-bg" />
+            <img src="common/images/mv-logo.svg" alt="" class="mv-logo" />
+            <img src="common/images/mv-copy.svg" alt="" class="mv-copy" />
+          </div>
+          <div class="mv-info">
+            <img src="common/images/mv-open.svg" alt="" class="mv-open" />
+            <img src="common/images/mv-date.svg" alt="" class="mv-date" />
+            <img src="common/images/mv-text.svg" alt="" class="mv-text" />
+          </div>
+        </div>
+      </section>
+      <div class="side-fixed">
+        <div class="text">
+          先着<span class="num">500</span>名限定<br />
+          オリジナルビアグラスをプレゼント！
+        </div>
+        <a class="side-btn" style="cursor: pointer">早割チケットを購入する</a>
+        <div class="close-btn">✕</div>
+      </div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1280 100"
+        preserveAspectRatio="none"
+        class="wave"
+      >
+        <path
+          class="wave-path"
+          d="M 0 30 Q 80 30 160 15 Q 320 -15 480 15 Q 560 30 640 30 Q 720 30 800 15 Q 960 -15 1120 15 Q 1200 30 1280 30 Q 1360 30 1440 15 Q 1600 -15 1760 15 Q 1840 30 1920 30 L 1280 100 L 0 100 Z"
+          fill="#ffc107"
+        ></path>
+      </svg>
+
+      <div class="beer-area">
+        <section id="ticket-buy">
+          <div class="inner-wrap">
+            <ul class="circles">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <div class="heading">
+              <img src="common/images/cta-heading.svg" alt="" />
+            </div>
+            <div class="text">
+              通常7,000円の【前売り券＋飲み放題パス】が、早割なら6,500円！<br />
+              さらに、先着500名様にオリジナルビアグラスをプレゼント。<br />
+              完売前に今すぐチケットを手に入れよう！
+            </div>
+            <a class="cta-btn" style="cursor: pointer"
+              >早割チケットを購入する</a
+            >
+          </div>
+        </section>
+      </div>
+      <section id="event">
+        <div class="inner-wrap">
+          <div class="container">
+            <h2 class="sec-heading">
+              <img src="common/images/h-event.png" alt="" />
+            </h2>
+            <div class="lead">
+              CRAFT BEER FES 2025は、<br />
+              日本中のクラフトビールが一堂に会する国内最大級のフェスです。<br />
+              飲み比べ体験やフードトラック、ステージイベントなど、<br />
+              ビールをもっと楽しめるコンテンツが盛りだくさん！
+            </div>
+            <ul class="event-list">
+              <li class="item">
+                <div class="head">開催日</div>
+                <div class="desc">2025年 9月14日(金) 〜 16日(日)</div>
+              </li>
+              <li class="item">
+                <div class="head">時間</div>
+                <div class="desc">11:00 〜 20:00</div>
+              </li>
+              <li class="item">
+                <div class="head">会場</div>
+                <div class="desc">東京ビッグサイト 屋外・屋内特設エリア</div>
+              </li>
+              <li class="item">
+                <div class="head">料金</div>
+                <div class="desc">
+                  前売り券：3,000円<br />
+                  飲み放題パス：+4000円(計7,000円)<br />
+                  当日券：3,500円
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="brewery">
+        <div class="inner-wrap">
+          <div class="container">
+            <h2 class="sec-heading">
+              <img src="common/images/h-brewery.png" alt="" />
+            </h2>
+            <div class="lead">
+              北海道から沖縄まで、個性豊かなブルワリーが勢揃い。<br />
+              IPA・スタウト・ヴァイツェンなど、<br />
+              100種類以上のビールを心ゆくまで飲み比べできます。
+            </div>
+            <ul class="brewery-list">
+              <li class="item">
+                <a style="cursor: pointer">
+                  <img src="common/images/brw-1.png" alt="" />
+                </a>
+              </li>
+              <li class="item">
+                <a style="cursor: pointer">
+                  <img src="common/images/brw-2.png" alt="" />
+                </a>
+              </li>
+              <li class="item">
+                <a style="cursor: pointer">
+                  <img src="common/images/brw-3.png" alt="" />
+                </a>
+              </li>
+              <li class="item">
+                <a style="cursor: pointer">
+                  <img src="common/images/brw-4.png" alt="" />
+                </a>
+              </li>
+              <li class="item">
+                <a style="cursor: pointer">
+                  <img src="common/images/brw-5.png" alt="" />
+                </a>
+              </li>
+              <li class="item">
+                <a style="cursor: pointer">
+                  <img src="common/images/brw-6.png" alt="" />
+                </a>
+              </li>
+            </ul>
+            <a class="cta-btn" style="cursor: pointer">一覧を見る</a>
+          </div>
+        </div>
+      </section>
+      <section id="contents">
+        <div class="inner-wrap">
+          <div class="container">
+            <h2 class="sec-heading">
+              <img src="common/images/h-contents.png" alt="" />
+            </h2>
+            <div class="lead">
+              会場内にはグルメフードトラックが多数出店。<br />
+              燻製ベーコン、クラフトピザ、唐揚げなど、<br />
+              ビールとの相性抜群のメニューをお楽しみください。<br />
+              また、ビールのプロによるトークショーや、初心者向けビール講座も開催！
+            </div>
+            <div class="pickup-heading">
+              <img
+                src="common/images/pickup-head.svg"
+                alt=""
+                class="pickup-head"
+              />
+            </div>
+
+            <div class="pickup-flex">
+              <div class="item">
+                <img src="common/images/pickup3-1.svg" alt="" />
+                <p>
+                  インスタ映え<br />
+                  フォトブース
+                </p>
+              </div>
+              <div class="item">
+                <img src="common/images/pickup3-2.svg" alt="" />
+                <p>
+                  限定グッズ販売<br />
+                  （Tシャツ・ビアグラス）
+                </p>
+              </div>
+              <div class="item">
+                <img src="common/images/pickup3-3.svg" alt="" />
+                <p>
+                  ライブ演奏<br />
+                  （ジャズバンド、<br />
+                  アコースティックライブ）
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="access">
+        <div class="inner-wrap">
+          <h2 class="sec-heading">
+            <img src="common/images/h-access.png" alt="" />
+          </h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.918658439068!2d139.7929326762295!3d35.62973173280053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601889dc629d1e7b%3A0xa4d1509a76045a01!2z5p2x5Lqs44OT44OD44Kw44K144Kk44OI!5e0!3m2!1sja!2sjp!4v1765867667895!5m2!1sja!2sjp"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="access-text">
+            <div class="place">東京ビッグサイト(有明)</div>
+            <div class="station">
+              <p>
+                りんかい線『国際展示場駅』より徒歩7分<br />
+                ゆりかもめ『東京ビッグサイト駅』より徒歩3分
+              </p>
+              <p>駐車場完備（有料）・シャトルバスあり</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="qa">
+        <div class="inner-wrap">
+          <h2 class="sec-heading">
+            <img src="common/images/h-qa.png" alt="" />
+          </h2>
+          <ul class="qa-list">
+            <li class="item">
+              <div class="qa-q">
+                <span class="qq">Q</span>雨天時でも開催されますか？
+                <span class="qa-kigou"></span>
+              </div>
+              <div class="qa-a">
+                雨天決行、荒天の場合は一部プログラムを中止する可能性があります。
+              </div>
+            </li>
+            <li class="item">
+              <div class="qa-q">
+                <span class="qq">Q</span>子供は入場できますか？
+                <span class="qa-kigou"></span>
+              </div>
+              <div class="qa-a">20歳未満は入場無料ですが、飲酒は禁止です。</div>
+            </li>
+            <li class="item">
+              <div class="qa-q">
+                <span class="qq">Q</span>飲み放題パスの制限はありますか？
+                <span class="qa-kigou"></span>
+              </div>
+              <div class="qa-a">再入場可、ラストオーダーは19:30です。</div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="ft-bnr">
+        <a class="cta-bnr">
+          <img src="common/images/cta-bnr.png" alt="" style="cursor: pointer" />
+        </a>
+      </div>
+    </main>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1280 100"
+      preserveAspectRatio="none"
+      class="wave"
+    >
+      <path
+        class="wave-path"
+        d="M 0 30 Q 80 30 160 15 Q 320 -15 480 15 Q 560 30 640 30 Q 720 30 800 15 Q 960 -15 1120 15 Q 1200 30 1280 30 Q 1360 30 1440 15 Q 1600 -15 1760 15 Q 1840 30 1920 30 L 1280 100 L 0 100 Z"
+        fill="#ffc107"
+      ></path>
+    </svg>
+    <footer>
+      <div class="sns-list">
+        <a class="sns" style="cursor: pointer">
+          <img src="common/images/x-icon.png" alt="" />
+        </a>
+        <a class="sns" style="cursor: pointer">
+          <img src="common/images/insta-icon.png" alt="" />
+        </a>
+        <a class="sns" style="cursor: pointer">
+          <img src="common/images/facebook-icon.png" alt="" />
+        </a>
+      </div>
+      <div class="copy-right">©CRAFT BEER FES 2025</div>
+    </footer>
+  </body>
+</html>

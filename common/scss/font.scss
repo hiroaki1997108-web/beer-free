@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+body {
+  @include font-base();
+  color: #0b0b0b;
+}
+
+input,
+button {
+  @include font-base();
+  color: #0b0b0b;
+}
+
+.cta-btn {
+  @include font-base(1.5em, 600);
+}
+
+.side-fixed {
+  .text {
+    font-weight: 600;
+    .num {
+      font-size: 1.5em;
+    }
+  }
+  .side-btn {
+    @include font-base(1.25em, 800);
+  }
+}
+
+#ticket-buy {
+  .text {
+    @include font-base(1.25em, 600);
+  }
+}
+
+#event {
+  .event-list {
+    .item {
+      .head {
+        @include font-base(1.5em, 600);
+      }
+      .desc {
+        @include font-base(1.25em, 600);
+      }
+    }
+  }
+}
+
+#contents {
+  .pickup-flex {
+    .item {
+      p {
+        font-weight: 800;
+      }
+    }
+  }
+}
+
+#access {
+  .place {
+    @include font-base(1.25em, 600);
+  }
+}
+
+#qa {
+  .qa-list {
+    @include font-base(1.1em, 600);
+  }
+}
+.copy-right {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 900px) {
+}
+
+@media screen and (max-width: 540px) {
+  body {
+    @include font-base(14px, 500);
+  }
+  .lead {
+    font-size: 12px;
+  }
+  #ticket-buy {
+    .text {
+      font-size: 1em;
+    }
+  }
+  .cta-btn {
+    font-size: 1.3em;
+  }
+  #event {
+    .event-list {
+      .item {
+        .head {
+          font-size: 1.2em;
+        }
+        .desc {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+  #contents {
+    .pickup-flex {
+      .item {
+        p {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+  #qa {
+    .qa-list {
+      font-size: 1em;
+    }
+  }
+}
