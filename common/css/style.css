@@ -288,7 +288,12 @@ section {
     margin: auto; }
   #ticket-buy .text {
     text-align: center;
-    padding: 2em 0; }
+    padding: 2em 0;
+    text-shadow: 0 0 8px #fff;
+    padding: 2em 1em;
+    color: #000b4d;
+    width: fit-content;
+    margin: 0em auto 1em; }
   #ticket-buy .cta-btn {
     display: block;
     max-width: calc(400px - 2em - 6px);
@@ -421,6 +426,11 @@ section {
         padding-top: 1em;
         text-align: center;
         color: #000b4d; }
+
+.cont-slider {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto 4em; }
 
 #access iframe {
   display: block;

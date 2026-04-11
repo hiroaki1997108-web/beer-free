@@ -182,6 +182,24 @@
               ビールとの相性抜群のメニューをお楽しみください。<br />
               また、ビールのプロによるトークショーや、初心者向けビール講座も開催！
             </div>
+            <div class="swiper cont-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="common/images/contents-slide1.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="common/images/contents-slide2.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="common/images/contents-slide3.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="common/images/contents-slide4.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
             <div class="pickup-heading">
               <img
                 src="common/images/pickup-head.svg"
@@ -307,5 +325,26 @@
       </div>
       <div class="copy-right">©CRAFT BEER FES 2025</div>
     </footer>
+
+    <script>
+      const worksSwiper = new Swiper(".cont-slider", {
+        loop: true,
+        speed: 2000,
+        spaceBetween: 20,
+        slidesPerView: 1.2,
+        centeredSlides: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          1000: {
+            //画面幅600px以上で適用
+            slidesPerView: 1.5,
+            spaceBetween: 40,
+          },
+        },
+      });
+    </script>
   </body>
 </html>

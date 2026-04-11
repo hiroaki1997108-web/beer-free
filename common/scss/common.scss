@@ -247,6 +247,11 @@ section {
   .text {
     text-align: center;
     padding: 2em 0;
+    text-shadow: 0 0 8px #fff;
+    padding: 2em 1em;
+    color: #000b4d;
+    width: fit-content;
+    margin: 0em auto 1em;
   }
   .cta-btn {
     display: block;
@@ -405,6 +410,12 @@ section {
       }
     }
   }
+}
+
+.cont-slider {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto 4em;
 }
 
 #access {
