@@ -33,6 +33,10 @@ button {
   }
 }
 
+.lead {
+  @include font-base(1.25em, 500);
+}
+
 #event {
   .event-list {
     .item {
@@ -72,6 +76,9 @@ button {
 }
 
 @media screen and (max-width: 900px) {
+  body {
+    @include font-base(14px, 500);
+  }
 }
 
 @media screen and (max-width: 540px) {
