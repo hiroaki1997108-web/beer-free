@@ -299,9 +299,14 @@ section {
     line-height: 1.8;
   }
   .event-list {
-    max-width: 800px;
+    box-sizing: border-box;
+    max-width: 900px;
     width: 100%;
     margin: auto;
+    border: solid 4px #000b4d;
+    padding: 1em 2em;
+    border-radius: 40px;
+    background: #fff7e1;
     .item {
       display: flex;
       align-items: center;
@@ -328,6 +333,7 @@ section {
           height: 12px;
           border-radius: 10px;
           background: #fff;
+          border: solid 2px $sub;
         }
       }
     }
@@ -418,7 +424,7 @@ section {
     padding: 6em 2em 2em;
     box-sizing: border-box;
     border-radius: 40px;
-    background: #9ddaff;
+    background: #b0f0fd;
     .item {
       width: 30%;
       p {
@@ -661,9 +667,12 @@ footer {
   #event {
     padding: 20px 0 0;
     .lead {
-      padding: 1em 0;
+      padding: 1em 0 2em;
     }
     .event-list {
+      border: solid 2px $sub;
+      border-radius: 20px;
+      padding: 0.5em 1em;
       .item {
         .head {
           min-width: calc(130px - 2em);
@@ -671,6 +680,7 @@ footer {
           &::before {
             width: 8px;
             height: 8px;
+            border: solid 1px $sub;
           }
         }
       }

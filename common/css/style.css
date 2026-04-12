@@ -344,9 +344,14 @@ section {
     padding: 2em 0;
     line-height: 1.8; }
   #event .event-list {
-    max-width: 800px;
+    box-sizing: border-box;
+    max-width: 900px;
     width: 100%;
-    margin: auto; }
+    margin: auto;
+    border: solid 4px #000b4d;
+    padding: 1em 2em;
+    border-radius: 40px;
+    background: #fff7e1; }
     #event .event-list .item {
       display: flex;
       align-items: center;
@@ -371,7 +376,8 @@ section {
           width: 12px;
           height: 12px;
           border-radius: 10px;
-          background: #fff; }
+          background: #fff;
+          border: solid 2px #000b4d; }
 
 #brewery {
   padding: 40px 0;
@@ -431,7 +437,7 @@ section {
     padding: 6em 2em 2em;
     box-sizing: border-box;
     border-radius: 40px;
-    background: #9ddaff; }
+    background: #b0f0fd; }
     #contents .pickup-flex .item {
       width: 30%; }
       #contents .pickup-flex .item p {
@@ -622,13 +628,18 @@ footer {
   #event {
     padding: 20px 0 0; }
     #event .lead {
-      padding: 1em 0; }
-    #event .event-list .item .head {
-      min-width: calc(130px - 2em);
-      padding: 0.5em; }
-      #event .event-list .item .head::before {
-        width: 8px;
-        height: 8px; }
+      padding: 1em 0 2em; }
+    #event .event-list {
+      border: solid 2px #000b4d;
+      border-radius: 20px;
+      padding: 0.5em 1em; }
+      #event .event-list .item .head {
+        min-width: calc(130px - 2em);
+        padding: 0.5em; }
+        #event .event-list .item .head::before {
+          width: 8px;
+          height: 8px;
+          border: solid 1px #000b4d; }
 
   #brewery {
     padding: 20px 0 0; }
