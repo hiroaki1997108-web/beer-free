@@ -14,7 +14,6 @@ button {
 .cta-btn {
   @include font-base(1.5em, 600);
 }
-
 .side-fixed {
   .text {
     font-weight: 600;
@@ -26,17 +25,14 @@ button {
     @include font-base(1.25em, 800);
   }
 }
-
 #ticket-buy {
   .text {
     @include font-base(1.25em, 600);
   }
 }
-
 .lead {
   @include font-base(1.25em, 500);
 }
-
 #event {
   .event-list {
     .item {
@@ -49,7 +45,6 @@ button {
     }
   }
 }
-
 #contents {
   .pickup-flex {
     .item {
@@ -59,13 +54,11 @@ button {
     }
   }
 }
-
 #access {
   .place {
     @include font-base(1.25em, 600);
   }
 }
-
 #qa {
   .qa-list {
     @include font-base(1.1em, 600);
@@ -82,28 +75,25 @@ button {
 }
 
 @media screen and (max-width: 540px) {
-  body {
-    @include font-base(14px, 500);
-  }
   .lead {
     font-size: 13px;
   }
   #ticket-buy {
     .text {
-      font-size: 1em;
+      font-size: 14px;
     }
   }
   .cta-btn {
-    font-size: 1.3em;
+    font-size: 18px;
   }
   #event {
     .event-list {
       .item {
         .head {
-          font-size: 1.2em;
+          font-size: 15px;
         }
         .desc {
-          font-size: 1em;
+          font-size: 14px;
         }
       }
     }
@@ -119,7 +109,7 @@ button {
   }
   #qa {
     .qa-list {
-      font-size: 1em;
+      font-size: 14px;
     }
   }
 }

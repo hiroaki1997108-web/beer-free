@@ -68,30 +68,25 @@ button {
     font-family: "Noto Sans JP", sans-serif;
     font-weight: 500; } }
 @media screen and (max-width: 540px) {
-  body {
-    font-size: 14px;
-    font-family: "Noto Sans JP", sans-serif;
-    font-weight: 500; }
-
   .lead {
     font-size: 13px; }
 
   #ticket-buy .text {
-    font-size: 1em; }
+    font-size: 14px; }
 
   .cta-btn {
-    font-size: 1.3em; }
+    font-size: 18px; }
 
   #event .event-list .item .head {
-    font-size: 1.2em; }
+    font-size: 15px; }
   #event .event-list .item .desc {
-    font-size: 1em; }
+    font-size: 14px; }
 
   #contents .pickup-flex .item p {
     font-size: 11px; }
 
   #qa .qa-list {
-    font-size: 1em; } }
+    font-size: 14px; } }
 html,
 body {
   width: 100%;
@@ -582,12 +577,12 @@ footer {
     padding: 40px 0; }
 
   .side-fixed {
-    right: 0em;
-    bottom: 0em; }
+    right: 0;
+    bottom: 0; }
 
   #mv .mv-logo {
     width: calc(80% - 2em);
-    padding: 1em;
+    padding: 14px;
     -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.6));
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.6)); }
   #mv .mv-bg {
@@ -599,12 +594,12 @@ footer {
     background: #000b4d;
     filter: none; }
   #mv .mv-info {
-    padding: 40px 1em 0; }
+    padding: 40px 14px 0; }
   #mv .mv-open {
-    margin-bottom: 1em; }
+    margin-bottom: 16px; }
   #mv .mv-text {
     width: 80%;
-    margin: 2em auto 0; }
+    margin: 28px auto 0; }
 
   .wave {
     top: 40px; }
@@ -643,10 +638,10 @@ footer {
     #event .event-list {
       border: solid 2px #000b4d;
       border-radius: 20px;
-      padding: 0.5em 1em; }
+      padding: 8px 16px; }
       #event .event-list .item .head {
-        min-width: calc(130px - 2em);
-        padding: 0.5em;
+        min-width: 100px;
+        padding: 15px 0 15px 10px;
         margin-right: 0; }
         #event .event-list .item .head::before {
           width: 6px;
@@ -658,7 +653,7 @@ footer {
     #brewery .lead {
       padding: 1em 0 2em; }
     #brewery .brewery-list {
-      margin: 0 auto 2em;
+      margin: 0 auto 30px;
       grid-template-columns: repeat(2, 1fr); }
 
   #contents {
