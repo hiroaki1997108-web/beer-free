@@ -85,6 +85,7 @@ section {
   background: $main;
   border: solid 4px $sub;
   padding: 0.5em;
+  border-radius: 10px;
   .text {
     position: relative;
     text-align: center;
@@ -122,6 +123,7 @@ section {
     padding: 0.5em 1em;
     text-align: center;
     border: solid 3px $sub;
+    border-radius: 10px;
     &:hover {
       background: $sub;
       color: #fff;
@@ -321,7 +323,7 @@ section {
         background: $main;
         padding: 1em;
         position: relative;
-        clip-path: polygon(0 0, 70% 0, 90% 50%, 70% 100%, 0 100%);
+        clip-path: polygon(0 0, 70% 0, 85% 50%, 70% 100%, 0 100%);
         margin-right: 3%;
         &::before {
           content: "";
@@ -550,6 +552,10 @@ section {
     width: 90%;
     margin: auto;
     box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    img {
+      border-radius: 10px;
+    }
   }
 }
 
@@ -677,9 +683,10 @@ footer {
         .head {
           min-width: calc(130px - 2em);
           padding: 0.5em;
+          margin-right: 0;
           &::before {
-            width: 8px;
-            height: 8px;
+            width: 6px;
+            height: 6px;
             border: solid 1px $sub;
           }
         }
