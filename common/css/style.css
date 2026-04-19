@@ -69,7 +69,10 @@ button {
     font-weight: 500; } }
 @media screen and (max-width: 540px) {
   .lead {
-    font-size: 13px; }
+    font-size: 13px;
+    font-size: 13px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 600; }
 
   #ticket-buy .text {
     font-size: 14px; }
@@ -131,8 +134,8 @@ section {
     max-width: 500px;
     width: calc(90% - 4em);
     padding: 2em;
-    -webkit-filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.6));
-    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.6)); }
+    -webkit-filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4)); }
   #mv .mv-copy {
     position: absolute;
     left: 0;
@@ -163,7 +166,7 @@ section {
   right: 1em;
   bottom: 1em;
   background: #ffc107;
-  border: solid 4px #000b4d;
+  border: solid 2px #000b4d;
   padding: 0.5em;
   border-radius: 10px; }
   .side-fixed .text {
@@ -198,7 +201,7 @@ section {
     color: #000b4d;
     padding: 0.5em 1em;
     text-align: center;
-    border: solid 3px #000b4d;
+    border: solid 2px #000b4d;
     border-radius: 10px; }
     .side-fixed .side-btn:hover {
       background: #000b4d;
@@ -206,8 +209,8 @@ section {
   .side-fixed .close-btn {
     cursor: pointer;
     position: absolute;
-    top: -0.8em;
-    left: -0.8em;
+    top: -0.7em;
+    left: -0.7em;
     width: 30px;
     height: 30px;
     background: #000b4d;
@@ -324,12 +327,11 @@ section {
       color: #000b4d; }
 
 .container {
-  max-width: calc(1100px - 2em - 8px);
-  width: calc(100% - 2em - 8px);
+  max-width: calc(1000px - 2em);
+  width: calc(100% - 2em);
   margin: auto;
   background: #fff;
   padding: 4em 1em;
-  border: solid 4px #000b4d;
   border-radius: 40px; }
 
 .sec-heading {
@@ -348,10 +350,9 @@ section {
     max-width: 900px;
     width: 100%;
     margin: auto;
-    border: solid 4px #000b4d;
     padding: 1em 2em;
     border-radius: 40px;
-    background: #fff7e1; }
+    background: #fff1cb; }
     #event .event-list .item {
       display: flex;
       align-items: center;
@@ -373,8 +374,8 @@ section {
           right: 30%;
           top: 50%;
           transform: translateY(-50%);
-          width: 12px;
-          height: 12px;
+          width: 10px;
+          height: 10px;
           border-radius: 10px;
           background: #fff;
           border: solid 2px #000b4d; }
@@ -452,9 +453,10 @@ section {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto; }
+  .cont-slider .swiper-wrapper {
+    transition-timing-function: linear !important; }
   .cont-slider .swiper-slide {
     box-sizing: border-box;
-    border: solid 4px #000b4d;
     border-radius: 1em;
     overflow: hidden; }
 
@@ -483,8 +485,7 @@ section {
     #qa .qa-list .item {
       background: #ffc107;
       border-radius: 10px;
-      margin-bottom: 20px;
-      border: solid 2px #000b4d; }
+      margin-bottom: 20px; }
       #qa .qa-list .item .qa-q {
         padding: 1em;
         border-radius: 10px;
@@ -583,8 +584,8 @@ footer {
   #mv .mv-logo {
     width: calc(80% - 2em);
     padding: 14px;
-    -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.6));
-    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.6)); }
+    -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4));
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4)); }
   #mv .mv-bg {
     height: 70vh; }
   #mv .mv-copy {
@@ -625,8 +626,7 @@ footer {
 
   .container {
     border-radius: 20px;
-    padding: 2em 1em;
-    border: solid 2px #000b4d; }
+    padding: 2em 1em; }
 
   #ticket-buy {
     padding: 60px 0 40px; }
@@ -636,7 +636,6 @@ footer {
     #event .lead {
       padding: 1em 0 2em; }
     #event .event-list {
-      border: solid 2px #000b4d;
       border-radius: 20px;
       padding: 8px 16px; }
       #event .event-list .item .head {
@@ -671,9 +670,6 @@ footer {
       border-radius: 20px;
       border: solid 2px #000b4d;
       padding: 40px 12px 16px; }
-
-  .cont-slider .swiper-slide {
-    border: solid 2px #000b4d; }
 
   .ft-bnr {
     padding: 40px 0 0; } }
