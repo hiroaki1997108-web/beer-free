@@ -679,11 +679,11 @@ footer {
   #event {
     padding: 20px 0 0;
     .lead {
-      padding: 1em 0 2em;
+      padding: 1em 0.3em 2em;
     }
     .event-list {
       border-radius: 20px;
-      padding: 8px 16px;
+      padding: 8px 10px;
       .item {
         .head {
           min-width: 100px;
@@ -701,7 +701,7 @@ footer {
   #brewery {
     padding: 20px 0 0;
     .lead {
-      padding: 1em 0 2em;
+      padding: 1em 0.3em 2em;
     }
     .brewery-list {
       margin: 0 auto 30px;
@@ -711,7 +711,7 @@ footer {
   #contents {
     padding: 20px 0 40px;
     .lead {
-      padding: 1em 0 2em;
+      padding: 1em 0.3em 2em;
     }
     .pickup-head {
       max-width: 120px;
