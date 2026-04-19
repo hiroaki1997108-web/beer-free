@@ -491,7 +491,7 @@ section {
     .item {
       background: $main;
       border-radius: 10px;
-      margin-bottom: 20px;
+      margin-bottom: 1.15em;
       .qa-q {
         padding: 1em;
         border-radius: 10px;
@@ -679,7 +679,7 @@ footer {
   #event {
     padding: 20px 0 0;
     .lead {
-      padding: 1em 0.3em 2em;
+      padding: 1.5em 0.3em 2em;
     }
     .event-list {
       border-radius: 20px;
@@ -701,7 +701,7 @@ footer {
   #brewery {
     padding: 20px 0 0;
     .lead {
-      padding: 1em 0.3em 2em;
+      padding: 1.5em 0.3em 2em;
     }
     .brewery-list {
       margin: 0 auto 30px;
@@ -711,7 +711,7 @@ footer {
   #contents {
     padding: 20px 0 40px;
     .lead {
-      padding: 1em 0.3em 2em;
+      padding: 1.5em 0.3em 2em;
     }
     .pickup-head {
       max-width: 120px;

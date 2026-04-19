@@ -485,7 +485,7 @@ section {
     #qa .qa-list .item {
       background: #ffc107;
       border-radius: 10px;
-      margin-bottom: 20px; }
+      margin-bottom: 1.15em; }
       #qa .qa-list .item .qa-q {
         padding: 1em;
         border-radius: 10px;
@@ -634,7 +634,7 @@ footer {
   #event {
     padding: 20px 0 0; }
     #event .lead {
-      padding: 1em 0.3em 2em; }
+      padding: 1.5em 0.3em 2em; }
     #event .event-list {
       border-radius: 20px;
       padding: 8px 10px; }
@@ -650,7 +650,7 @@ footer {
   #brewery {
     padding: 20px 0 0; }
     #brewery .lead {
-      padding: 1em 0.3em 2em; }
+      padding: 1.5em 0.3em 2em; }
     #brewery .brewery-list {
       margin: 0 auto 30px;
       grid-template-columns: repeat(2, 1fr); }
@@ -658,7 +658,7 @@ footer {
   #contents {
     padding: 20px 0 40px; }
     #contents .lead {
-      padding: 1em 0.3em 2em; }
+      padding: 1.5em 0.3em 2em; }
     #contents .pickup-head {
       max-width: 120px;
       width: 25%;
