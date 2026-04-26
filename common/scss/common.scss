@@ -256,28 +256,33 @@ section {
   }
   .text {
     text-align: center;
-    padding: 2em 0;
-    text-shadow: 0 0 8px #fff;
+    text-shadow: 0 0 6px #fff;
     padding: 2em 1em;
     color: #000b4d;
     width: fit-content;
     margin: 0em auto 1em;
-    line-height: 1.8;
+    line-height: 2;
+    -webkit-text-stroke: 3px rgba(#fff, 1);
+    paint-order: stroke;
   }
   .cta-btn {
     display: block;
-    max-width: calc(400px - 2em - 6px);
+    max-width: calc(500px - 2em - 6px);
     width: calc(100% - 2em - 6px);
     margin: auto;
-    padding: 0.5em 1em;
-    background: $sub;
-    color: #fff;
+    padding: 0.8em 1em;
+    background: #fff;
+    color: $sub;
     text-align: center;
     border-radius: 2em;
     border: solid 3px $sub;
+    box-shadow: 0 6px 0 0 $sub;
+    position: relative;
+    top: -4px;
+    transition: 0.2s;
     &:hover {
-      background: #fff;
-      color: $sub;
+      top: 0;
+      box-shadow: 0 0 0 0 $sub;
     }
   }
 }
@@ -289,6 +294,7 @@ section {
   background: #fff;
   padding: 4em 1em;
   border-radius: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 .sec-heading {
   max-width: 700px;
@@ -415,7 +421,7 @@ section {
     max-width: 180px;
     width: 40%;
     margin: auto;
-    background: #fff;
+    background: #ffd862;
     padding: 20px 60px 10px;
     border: solid 4px #000b4d;
     border-radius: 40px;
@@ -508,6 +514,7 @@ section {
           line-height: 2.4em;
           margin-right: 2%;
           border: solid 2px #000b4d;
+          color: #000b4d;
         }
         .qa-kigou {
           display: inline-block;
@@ -675,9 +682,12 @@ footer {
 
   #ticket-buy {
     padding: 60px 0 40px;
+    .text {
+      -webkit-text-stroke: 2px white;
+    }
   }
   #event {
-    padding: 20px 0 0;
+    padding: 20px 0;
     .lead {
       padding: 1.5em 0.3em 2em;
     }
@@ -699,7 +709,7 @@ footer {
     }
   }
   #brewery {
-    padding: 20px 0 0;
+    padding: 10px 0 20px;
     .lead {
       padding: 1.5em 0.3em 2em;
     }
@@ -709,7 +719,7 @@ footer {
     }
   }
   #contents {
-    padding: 20px 0 40px;
+    padding: 10px 0 40px;
     .lead {
       padding: 1.5em 0.3em 2em;
     }
