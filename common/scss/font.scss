@@ -11,6 +11,12 @@ button {
   color: #0b0b0b;
 }
 
+#mv {
+  .mv-cp {
+    @include font-base(2.3em, 700);
+  }
+}
+
 .cta-btn {
   @include font-base(1.5em, 800);
 }
@@ -75,6 +81,11 @@ button {
 }
 
 @media screen and (max-width: 540px) {
+  #mv {
+    .mv-cp {
+      font-size: 20px;
+    }
+  }
   .lead {
     font-size: 13px;
     @include font-base(13px, 600);
