@@ -626,7 +626,6 @@ footer {
     background: #000b4d;
     filter: none; }
   #mv .mv-cp p {
-    padding: 0.5em 0.8em;
     box-shadow: 4px 4px 0px 0px rgba(255, 255, 255, 0.9); }
     #mv .mv-cp p:first-of-type {
       margin-bottom: 12px; }
