@@ -71,18 +71,15 @@ section {
     left: 0;
     right: 0;
     bottom: 10%;
-    color: #fff;
+    color: #000b4d;
     line-height: 1.6;
     p {
       width: fit-content;
-      padding: 0.3em 0.6em;
-      // background: rgba(#47b5ff, 0.9);
-      background: rgba(#0c004e, 0.9);
-      box-shadow: 6px 6px 0px 0px rgba(#fff, 0.9);
-      text-shadow: 1px 1px 2px rgba(1, 1, 1, 0.3);
-      border-top: solid 1px #fff;
-      border-right: solid 1px #fff;
-      border-bottom: solid 1px #fff;
+      padding: 0.2em 1em 0.2em 0.6em;
+      background: #ffffff;
+      box-shadow: 2px 4px 0px 2px #000b4d;
+      border-left: none;
+      border-radius: 0 40px 40px 0;
       &:first-of-type {
         margin-bottom: 20px;
       }
@@ -284,28 +281,42 @@ section {
     width: fit-content;
     margin: 0em auto 1em;
     line-height: 2;
-    -webkit-text-stroke: 3px rgba(#fff, 1);
-    paint-order: stroke;
+    // -webkit-text-stroke: 2px rgba(#fff, 1);
+    // paint-order: stroke;
+  }
+
+  @keyframes ctabtn {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
   .cta-btn {
     display: block;
-    max-width: calc(500px - 2em - 6px);
-    width: calc(100% - 2em - 6px);
+    max-width: calc(400px - 6px);
+    width: calc(100% - 6px);
     margin: auto;
-    padding: 0.8em 1em;
-    background: #fff;
-    color: $sub;
+    padding: 0.8em 0em;
+    background: #be1cff;
+    color: #fff;
     text-align: center;
     border-radius: 2em;
-    border: solid 3px $sub;
-    box-shadow: 0 6px 0 0 $sub;
+    border: solid 3px #430279;
+    box-shadow: 0 6px 0 0 #430279;
     position: relative;
     top: -4px;
     transition: 0.2s;
-    &:hover {
-      top: 0;
-      box-shadow: 0 0 0 0 $sub;
-    }
+    animation: ctabtn 2s linear infinite;
+
+    // &:hover {
+    //   top: 0;
+    //   box-shadow: 0 0 0 0 $sub;
+    // }
   }
 }
 
@@ -316,8 +327,8 @@ section {
   background: #fff;
   padding: 4em 1em;
   border-radius: 40px;
-  // box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  border: solid 4px $sub;
+  box-shadow: 8px 8px 0px $sub;
+  border: solid 3px $sub;
 }
 .sec-heading {
   max-width: 700px;
@@ -330,7 +341,7 @@ section {
   background: $main;
   .lead {
     padding: 2em 0;
-    line-height: 1.8;
+    line-height: 1.6;
   }
   .event-list {
     box-sizing: border-box;
@@ -378,23 +389,7 @@ section {
   background: $main;
   .lead {
     padding: 2em 0;
-    line-height: 1.8;
-  }
-  .brewery-list {
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto 4em;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    .item {
-      display: block;
-      box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
-      transition: 0.2s;
-      &:hover {
-        opacity: 0.7;
-      }
-    }
+    line-height: 1.6;
   }
   .cta-btn {
     display: block;
@@ -413,32 +408,30 @@ section {
     }
   }
 }
+.brewery-list {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto 2em;
+
+  .swiper-wrapper {
+    transition-timing-function: linear !important;
+    padding: 1em 0;
+  }
+  .swiper-slide {
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+  }
+}
 
 #contents {
   padding: 40px 0 120px;
   background: $main;
   .lead {
     padding: 2em 0;
-    line-height: 1.8;
+    line-height: 1.6;
   }
-  // .pickup-heading {
-  //   align-items: center;
-  //   display: flex;
-  //   justify-content: center;
-  //   max-width: 900px;
-  //   width: 100%;
-  //   margin: auto;
-  //   position: relative;
-  //   top: 70px;
-  // &::before,
-  // &::after {
-  //   content: "";
-  //   width: 100%;
-  //   height: 4px;
-  //   background: $sub;
-  //   border-radius: 2px;
-  // }
-  // }
   .pickup-head {
     display: block;
     max-width: 180px;
@@ -658,7 +651,8 @@ footer {
     }
     .mv-cp {
       p {
-        box-shadow: 4px 4px 0px 0px rgba(255, 255, 255, 0.9);
+        box-shadow: 1px 2px 0px 1px #000b4d;
+        border: solid 2px #000b4d;
         &:first-of-type {
           margin-bottom: 12px;
         }
@@ -712,10 +706,8 @@ footer {
 
   #ticket-buy {
     padding: 60px 0 40px;
-    .text {
-      -webkit-text-stroke: 2px white;
-      // text-shadow: 0 0 4px rgba(#fff, 0.6);
-      text-shadow: none;
+    .cta-btn {
+      max-width: calc(300px - 6px);
     }
   }
   #event {
