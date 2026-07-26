@@ -1,9 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Noto+Serif+JP:wght@200..900&display=swap");
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap");
 body {
   font-size: 16px;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 500;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
   color: #0b0b0b; }
 
 input,
@@ -11,17 +15,23 @@ button {
   font-size: 16px;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 500;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
   color: #0b0b0b; }
 
 #mv .mv-cp {
   font-size: 2.2em;
   font-family: "Noto Sans JP", sans-serif;
-  font-weight: 800; }
+  font-weight: 600;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif; }
 
 .cta-btn {
   font-size: 1.5em;
   font-family: "Noto Sans JP", sans-serif;
-  font-weight: 800; }
+  font-weight: 800;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif; }
 
 .side-fixed .text {
   font-weight: 600; }
@@ -30,26 +40,36 @@ button {
 .side-fixed .side-btn {
   font-size: 1.25em;
   font-family: "Noto Sans JP", sans-serif;
-  font-weight: 800; }
+  font-weight: 800;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif; }
 
 #ticket-buy .text {
   font-size: 1.25em;
   font-family: "Noto Sans JP", sans-serif;
-  font-weight: 600; }
+  font-weight: 600;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif; }
 
 .lead {
   font-size: 1.25em;
   font-family: "Noto Sans JP", sans-serif;
-  font-weight: 500; }
+  font-weight: 500;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif; }
 
 #event .event-list .item .head {
   font-size: 1.5em;
   font-family: "Noto Sans JP", sans-serif;
-  font-weight: 600; }
+  font-weight: 600;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif; }
 #event .event-list .item .desc {
   font-size: 1.25em;
   font-family: "Noto Sans JP", sans-serif;
-  font-weight: 600; }
+  font-weight: 600;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif; }
 
 #contents .pickup-flex .item p {
   font-weight: 800; }
@@ -57,12 +77,16 @@ button {
 #access .place {
   font-size: 1.25em;
   font-family: "Noto Sans JP", sans-serif;
-  font-weight: 600; }
+  font-weight: 600;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif; }
 
 #qa .qa-list {
   font-size: 1.1em;
   font-family: "Noto Sans JP", sans-serif;
-  font-weight: 600; }
+  font-weight: 600;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif; }
 
 .copy-right {
   font-size: 12px; }
@@ -71,7 +95,9 @@ button {
   body {
     font-size: 14px;
     font-family: "Noto Sans JP", sans-serif;
-    font-weight: 500; } }
+    font-weight: 500;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-family: "M PLUS Rounded 1c", sans-serif; } }
 @media screen and (max-width: 540px) {
   #mv .mv-cp {
     font-size: 22px; }
@@ -80,7 +106,9 @@ button {
     font-size: 13px;
     font-size: 13px;
     font-family: "Noto Sans JP", sans-serif;
-    font-weight: 600; }
+    font-weight: 600;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-family: "M PLUS Rounded 1c", sans-serif; }
 
   #ticket-buy .text {
     font-size: 16px; }
@@ -142,8 +170,8 @@ section {
     max-width: 500px;
     width: calc(90% - 4em);
     padding: 2em;
-    -webkit-filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
-    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4)); }
+    -webkit-filter: drop-shadow(6px 4px 0 #000b4d);
+    filter: drop-shadow(6px 4px 0 #000b4d); }
   #mv .mv-copy {
     position: absolute;
     left: 0;
@@ -192,7 +220,8 @@ section {
   background: #ffc107;
   border: solid 2px #000b4d;
   padding: 0.5em;
-  border-radius: 10px; }
+  border-radius: 10px;
+  box-shadow: 4px 4px 0 0 #000b4d; }
   .side-fixed .text {
     position: relative;
     text-align: center;
@@ -342,21 +371,28 @@ section {
   100% {
     transform: scale(1); } }
   #ticket-buy .cta-btn {
+    box-sizing: border-box;
     display: block;
-    max-width: calc(400px - 6px);
-    width: calc(100% - 6px);
+    max-width: 420px;
+    width: 100%;
     margin: auto;
-    padding: 0.8em 0em;
-    background: #be1cff;
+    padding: 0.8em 1em 0.8em 0.4em;
+    background: linear-gradient(#e0a6ff, #8800d7);
     color: #fff;
     text-align: center;
     border-radius: 2em;
     border: solid 3px #430279;
     box-shadow: 0 6px 0 0 #430279;
-    position: relative;
-    top: -4px;
     transition: 0.2s;
-    animation: ctabtn 2s linear infinite; }
+    animation: ctabtn 2s linear infinite;
+    position: relative; }
+    #ticket-buy .cta-btn::before {
+      content: "▶︎";
+      position: absolute;
+      top: 50%;
+      right: 10%;
+      transform: translate(0, -50%);
+      font-size: 0.8em; }
 
 .container {
   max-width: calc(1000px - 2em - 8px);
@@ -617,8 +653,8 @@ footer {
   #mv .mv-logo {
     width: calc(80% - 2em);
     padding: 24px 0 0 14px;
-    -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4));
-    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4)); }
+    -webkit-filter: drop-shadow(4px 3px 0 #000b4d);
+    filter: drop-shadow(4px 3px 0 #000b4d); }
   #mv .mv-bg {
     height: 70vh; }
   #mv .mv-copy {
@@ -628,8 +664,7 @@ footer {
     background: #000b4d;
     filter: none; }
   #mv .mv-cp p {
-    box-shadow: 1px 2px 0px 1px #000b4d;
-    border: solid 2px #000b4d; }
+    box-shadow: 1px 2px 0px 1px #000b4d; }
     #mv .mv-cp p:first-of-type {
       margin-bottom: 12px; }
   #mv .mv-info {

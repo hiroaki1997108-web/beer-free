@@ -50,8 +50,8 @@ section {
     max-width: 500px;
     width: calc(90% - 4em);
     padding: 2em;
-    -webkit-filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
-    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
+    -webkit-filter: drop-shadow(6px 4px 0 rgba(0, 11, 77, 1));
+    filter: drop-shadow(6px 4px 0 rgba(0, 11, 77, 1));
   }
   .mv-copy {
     position: absolute;
@@ -109,6 +109,7 @@ section {
   border: solid 2px $sub;
   padding: 0.5em;
   border-radius: 10px;
+  box-shadow: 4px 4px 0 0 $sub;
   .text {
     position: relative;
     text-align: center;
@@ -281,8 +282,6 @@ section {
     width: fit-content;
     margin: 0em auto 1em;
     line-height: 2;
-    // -webkit-text-stroke: 2px rgba(#fff, 1);
-    // paint-order: stroke;
   }
 
   @keyframes ctabtn {
@@ -297,26 +296,29 @@ section {
     }
   }
   .cta-btn {
+    box-sizing: border-box;
     display: block;
-    max-width: calc(400px - 6px);
-    width: calc(100% - 6px);
+    max-width: 420px;
+    width: 100%;
     margin: auto;
-    padding: 0.8em 0em;
-    background: #be1cff;
+    padding: 0.8em 1em 0.8em 0.4em;
+    background: linear-gradient(#e0a6ff, #8800d7);
     color: #fff;
     text-align: center;
     border-radius: 2em;
     border: solid 3px #430279;
     box-shadow: 0 6px 0 0 #430279;
-    position: relative;
-    top: -4px;
     transition: 0.2s;
     animation: ctabtn 2s linear infinite;
-
-    // &:hover {
-    //   top: 0;
-    //   box-shadow: 0 0 0 0 $sub;
-    // }
+    position: relative;
+    &::before {
+      content: "▶︎";
+      position: absolute;
+      top: 50%;
+      right: 10%;
+      transform: translate(0, -50%);
+      font-size: 0.8em;
+    }
   }
 }
 
@@ -636,8 +638,8 @@ footer {
     .mv-logo {
       width: calc(80% - 2em);
       padding: 24px 0 0 14px;
-      -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4));
-      filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4));
+      -webkit-filter: drop-shadow(4px 3px 0 rgba(0, 11, 77, 1));
+      filter: drop-shadow(4px 3px 0 rgba(0, 11, 77, 1));
     }
     .mv-bg {
       height: 70vh;
@@ -652,7 +654,6 @@ footer {
     .mv-cp {
       p {
         box-shadow: 1px 2px 0px 1px #000b4d;
-        border: solid 2px #000b4d;
         &:first-of-type {
           margin-bottom: 12px;
         }
