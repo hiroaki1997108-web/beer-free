@@ -268,7 +268,7 @@ section {
 
 #ticket-buy {
   background: $main;
-  padding: 60px 0 40px;
+  padding: 60px 0 120px;
   .heading {
     max-width: 700px;
     width: 100%;
@@ -323,19 +323,47 @@ section {
 }
 
 .container {
-  max-width: calc(1000px - 2em - 8px);
-  width: calc(100% - 2em - 8px);
+  box-sizing: border-box;
+  max-width: 1000px;
+  width: 100%;
   margin: auto;
   background: #fff;
   padding: 4em 1em;
   border-radius: 40px;
   box-shadow: 8px 8px 0px $sub;
   border: solid 3px $sub;
+  position: relative;
 }
 .sec-heading {
   max-width: 700px;
   width: 100%;
   margin: auto;
+}
+.sec-title {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+  padding: 0.5em 1em 0.4em;
+  background: #fff;
+  border-radius: 0.4em;
+  border: solid 3px $sub;
+  box-shadow: 6px 6px 0px $sub;
+  width: fit-content;
+  margin: auto;
+  color: $sub;
+  .st-sub {
+    position: absolute;
+    top: -35px;
+    right: -40px;
+    width: fit-content;
+    border: solid 2px #000b4d;
+    box-shadow: 2px 2px 0px #000b4d;
+    background: #ffe491;
+    border-radius: 0.3em;
+    padding: 0em 0.4em;
+    transform: rotate(18deg);
+  }
 }
 
 #event {
@@ -387,7 +415,7 @@ section {
 }
 
 #brewery {
-  padding: 40px 0;
+  padding: 80px 0;
   background: $main;
   .lead {
     padding: 2em 0;
@@ -601,6 +629,9 @@ footer {
     margin: 0 auto 4em;
     .sns {
       width: 20%;
+      background: #fff;
+      border-radius: 50%;
+      padding: 2px;
     }
   }
   .copy-right {
@@ -653,7 +684,7 @@ footer {
     }
     .mv-cp {
       p {
-        box-shadow: 1px 2px 0px 1px #000b4d;
+        box-shadow: 2px 3px 0px 2px $sub;
         &:first-of-type {
           margin-bottom: 12px;
         }
@@ -703,6 +734,19 @@ footer {
     border-radius: 20px;
     padding: 2em 1em;
     border: solid 2px $sub;
+    box-shadow: 6px 6px 0px $sub;
+  }
+  .sec-title {
+    top: -25px;
+    border: solid 2px $sub;
+    box-shadow: 4px 4px 0px #000b4d;
+    border-radius: 10px;
+    padding: 0.3em 1em;
+
+    .st-sub {
+      top: -22px;
+      right: -25px;
+    }
   }
 
   #ticket-buy {
@@ -712,7 +756,6 @@ footer {
     }
   }
   #event {
-    padding: 20px 0;
     .lead {
       padding: 1.5em 0.3em 2em;
     }
@@ -734,7 +777,7 @@ footer {
     }
   }
   #brewery {
-    padding: 10px 0 20px;
+    padding: 60px 0;
     .lead {
       padding: 1.5em 0.3em 2em;
     }
@@ -744,7 +787,7 @@ footer {
     }
   }
   #contents {
-    padding: 10px 0 40px;
+    padding: 40px 0;
     .lead {
       padding: 1.5em 0.3em 2em;
     }

@@ -39,6 +39,12 @@ button {
 .lead {
   @include font-base(1.25em, 500);
 }
+.sec-title {
+  @include font-base(2.5em, 800);
+  .st-sub {
+    font-size: 0.8em;
+  }
+}
 #event {
   .event-list {
     .item {
@@ -89,6 +95,11 @@ button {
   .lead {
     font-size: 13px;
     @include font-base(13px, 600);
+  }
+  .sec-title {
+    font-size: 20px;
+    .st-sub {
+    }
   }
   #ticket-buy {
     .text {
