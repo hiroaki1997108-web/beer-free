@@ -65,7 +65,7 @@ button {
   font-family: "Zen Maru Gothic", sans-serif;
   font-family: "M PLUS Rounded 1c", sans-serif; }
   .sec-title .st-sub {
-    font-size: 0.8em; }
+    font-size: 0.7em; }
 
 #event .event-list .item .head {
   font-size: 1.5em;
@@ -438,8 +438,8 @@ section {
   color: #000b4d; }
   .sec-title .st-sub {
     position: absolute;
-    top: -35px;
-    right: -40px;
+    top: -40px;
+    right: -45px;
     width: fit-content;
     border: solid 2px #000b4d;
     box-shadow: 2px 2px 0px #000b4d;
@@ -447,6 +447,16 @@ section {
     border-radius: 0.3em;
     padding: 0em 0.4em;
     transform: rotate(18deg); }
+    .sec-title .st-sub::before {
+      content: "";
+      position: absolute;
+      bottom: -12px;
+      left: 0;
+      right: 0;
+      width: 8px;
+      height: 10px;
+      background: #000b4d;
+      margin: auto; }
 
 #event {
   padding: 40px 0;

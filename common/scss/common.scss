@@ -354,8 +354,8 @@ section {
   color: $sub;
   .st-sub {
     position: absolute;
-    top: -35px;
-    right: -40px;
+    top: -40px;
+    right: -45px;
     width: fit-content;
     border: solid 2px #000b4d;
     box-shadow: 2px 2px 0px #000b4d;
@@ -363,6 +363,17 @@ section {
     border-radius: 0.3em;
     padding: 0em 0.4em;
     transform: rotate(18deg);
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -12px;
+      left: 0;
+      right: 0;
+      width: 8px;
+      height: 10px;
+      background: $sub;
+      margin: auto;
+    }
   }
 }
 
