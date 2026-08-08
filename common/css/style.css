@@ -19,7 +19,7 @@ button {
   font-family: "M PLUS Rounded 1c", sans-serif;
   color: #0b0b0b; }
 
-#mv .mv-cp {
+#mv .mv-copy {
   font-size: 2.2em;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 600;
@@ -108,7 +108,7 @@ button {
     font-family: "Zen Maru Gothic", sans-serif;
     font-family: "M PLUS Rounded 1c", sans-serif; } }
 @media screen and (max-width: 540px) {
-  #mv .mv-cp {
+  #mv .mv-copy {
     font-size: 22px; }
 
   .lead {
@@ -173,45 +173,40 @@ section {
     position: relative; }
   #mv .mv-bg {
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     object-fit: cover; }
   #mv .mv-logo {
     position: absolute;
     top: 0;
     left: 0;
-    max-width: 500px;
-    width: calc(90% - 4em);
-    padding: 2em;
+    max-width: 600px;
+    width: 90%;
+    padding: 1em;
     -webkit-filter: drop-shadow(6px 4px 0 #000b4d);
     filter: drop-shadow(6px 4px 0 #000b4d); }
   #mv .mv-copy {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 10%;
-    margin: auto;
-    max-width: 1200px;
-    width: calc(90% - 2em);
-    border-top: solid 4px #fff;
-    border-bottom: solid 4px #fff;
-    padding: 1em;
-    filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.6)); }
-  #mv .mv-cp {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 10%;
+    bottom: 20%;
     color: #000b4d;
     line-height: 1.6; }
-    #mv .mv-cp p {
+    #mv .mv-copy p {
       width: fit-content;
       padding: 0.2em 1em 0.2em 0.6em;
       background: #ffffff;
       box-shadow: 2px 4px 0px 2px #000b4d;
       border-left: none;
       border-radius: 0 40px 40px 0; }
-      #mv .mv-cp p:first-of-type {
+      #mv .mv-copy p:first-of-type {
         margin-bottom: 20px; }
+  #mv .mv-wave {
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: auto; }
   #mv .mv-info {
     max-width: 1000px;
     width: calc(100% - 2em);
@@ -709,15 +704,9 @@ footer {
     filter: drop-shadow(4px 3px 0 #000b4d); }
   #mv .mv-bg {
     height: 70vh; }
-  #mv .mv-copy {
-    bottom: 0;
-    width: calc(100% - 2em);
-    border: none;
-    background: #000b4d;
-    filter: none; }
-  #mv .mv-cp p {
+  #mv .mv-copy p {
     box-shadow: 2px 3px 0px 2px #000b4d; }
-    #mv .mv-cp p:first-of-type {
+    #mv .mv-copy p:first-of-type {
       margin-bottom: 12px; }
   #mv .mv-info {
     padding: 40px 14px 0; }

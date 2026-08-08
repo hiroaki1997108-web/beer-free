@@ -12,7 +12,7 @@ button {
 }
 
 #mv {
-  .mv-cp {
+  .mv-copy {
     @include font-base(2.2em, 600);
   }
 }
@@ -88,7 +88,7 @@ button {
 
 @media screen and (max-width: 540px) {
   #mv {
-    .mv-cp {
+    .mv-copy {
       font-size: 22px;
     }
   }
