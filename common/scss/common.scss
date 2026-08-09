@@ -72,14 +72,6 @@ section {
       }
     }
   }
-  .mv-wave {
-    position: absolute;
-    bottom: -60px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    margin: auto;
-  }
   .mv-info {
     max-width: 1000px;
     width: calc(100% - 2em);
@@ -93,6 +85,19 @@ section {
     max-width: 600px;
     width: 100%;
     margin: 4em auto;
+  }
+}
+.mv-wave {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin: auto;
+  &.wave-transf {
+    bottom: auto;
+    top: -60px;
+    transform: rotate(180deg);
   }
 }
 .side-fixed {
@@ -263,7 +268,7 @@ section {
 
 #ticket-buy {
   background: $main;
-  padding: 60px 0 120px;
+  padding: 80px 0 200px;
   .heading {
     max-width: 700px;
     width: 100%;
@@ -421,7 +426,7 @@ section {
 }
 
 #brewery {
-  padding: 80px 0;
+  padding: 120px 0;
   background: $main;
   .lead {
     padding: 2em 0;
@@ -462,8 +467,9 @@ section {
 }
 
 #contents {
-  padding: 40px 0 120px;
+  padding: 40px 0 240px;
   background: $main;
+  position: relative;
   .lead {
     padding: 2em 0;
     line-height: 1.6;
@@ -540,6 +546,8 @@ section {
 
 #qa {
   background: #9ddaff;
+  position: relative;
+  padding: 180px 0;
   .qa-list {
     max-width: 800px;
     width: 100%;
@@ -548,6 +556,8 @@ section {
       background: $main;
       border-radius: 10px;
       margin-bottom: 1.15em;
+      box-shadow: 6px 6px 0px $sub;
+      border: solid 2px $sub;
       .qa-q {
         padding: 1em;
         border-radius: 10px;
@@ -609,7 +619,8 @@ section {
 }
 
 .ft-bnr {
-  padding: 80px 0 40px;
+  padding: 120px 0;
+  position: relative;
   .cta-bnr {
     display: block;
     max-width: 600px;
@@ -624,20 +635,25 @@ section {
 }
 
 footer {
-  padding: 80px 0 20px;
+  padding: 160px 0 20px;
   background: $main;
+  position: relative;
   .sns-list {
     display: flex;
+    gap: 24px;
     align-items: center;
-    justify-content: space-between;
-    max-width: 250px;
-    width: 100%;
+    justify-content: center;
     margin: 0 auto 4em;
     .sns {
-      width: 20%;
-      background: #fff;
+      box-sizing: border-box;
+      width: 60px;
       border-radius: 50%;
-      padding: 2px;
+      border: solid 2px #fff;
+      box-shadow: 2px 2px 0 0px $sub;
+      &:hover {
+        border: none;
+        box-shadow: none;
+      }
     }
   }
   .copy-right {
