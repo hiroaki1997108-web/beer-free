@@ -90,7 +90,6 @@ button {
   #mv {
     .mv-copy {
       font-size: 20px;
-      font-weight: 800;
     }
   }
   .lead {
@@ -98,7 +97,7 @@ button {
     @include font-base(13px, 600);
   }
   .sec-title {
-    font-size: 20px;
+    font-size: 22px;
     .st-sub {
     }
   }

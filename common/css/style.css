@@ -113,8 +113,7 @@ button {
     font-family: "M PLUS Rounded 1c", sans-serif; } }
 @media screen and (max-width: 540px) {
   #mv .mv-copy {
-    font-size: 20px;
-    font-weight: 800; }
+    font-size: 20px; }
 
   .lead {
     font-size: 13px;
@@ -125,7 +124,7 @@ button {
     font-family: "M PLUS Rounded 1c", sans-serif; }
 
   .sec-title {
-    font-size: 20px; }
+    font-size: 22px; }
 
   #ticket-buy .text {
     font-size: 16px; }
@@ -201,8 +200,9 @@ section {
       padding: 0.2em 1em 0.2em 0.6em;
       background: #ffffff;
       box-shadow: 2px 4px 0px 2px #000b4d;
-      border-left: none;
-      border-radius: 0 40px 40px 0; }
+      border-radius: 0 40px 40px 0;
+      border: solid 2px #000b4d;
+      border-left: none; }
       #mv .mv-copy p:first-of-type {
         margin-bottom: 20px; }
   #mv .mv-info {
@@ -730,7 +730,7 @@ footer {
   #mv .mv-copy {
     bottom: 15%; }
     #mv .mv-copy p {
-      box-shadow: 2px 3px 0px 2px #000b4d; }
+      box-shadow: 1px 3px 0px 1px #000b4d; }
       #mv .mv-copy p:first-of-type {
         margin-bottom: 12px; }
   #mv .mv-info {
@@ -767,7 +767,7 @@ footer {
     border-radius: 20px;
     padding: 2em 1em;
     border: solid 2px #000b4d;
-    box-shadow: 4px 4px 0px #000b4d; }
+    box-shadow: 6px 6px 0px #000b4d; }
 
   .sec-title {
     top: -25px;

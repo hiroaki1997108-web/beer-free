@@ -65,8 +65,9 @@ section {
       padding: 0.2em 1em 0.2em 0.6em;
       background: #ffffff;
       box-shadow: 2px 4px 0px 2px #000b4d;
-      border-left: none;
       border-radius: 0 40px 40px 0;
+      border: solid 2px $sub;
+      border-left: none;
       &:first-of-type {
         margin-bottom: 20px;
       }
@@ -702,7 +703,7 @@ footer {
     .mv-copy {
       bottom: 15%;
       p {
-        box-shadow: 2px 3px 0px 2px $sub;
+        box-shadow: 1px 3px 0px 1px $sub;
         &:first-of-type {
           margin-bottom: 12px;
         }
@@ -752,7 +753,7 @@ footer {
     border-radius: 20px;
     padding: 2em 1em;
     border: solid 2px $sub;
-    box-shadow: 4px 4px 0px $sub;
+    box-shadow: 6px 6px 0px $sub;
   }
   .sec-title {
     top: -25px;
