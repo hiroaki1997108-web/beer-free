@@ -73,10 +73,11 @@ section {
     }
   }
   .mv-info {
+    box-sizing: border-box;
     max-width: 1000px;
-    width: calc(100% - 2em);
+    width: 100%;
     margin: auto;
-    padding: 120px 1em 0;
+    padding-top: 120px;
   }
   .mv-open {
     margin-bottom: 2em;
@@ -690,8 +691,8 @@ footer {
   }
   #mv {
     .mv-logo {
-      width: calc(80% - 2em);
-      padding: 24px 0 0 14px;
+      width: 80%;
+      padding: 32px 0 0 14px;
       -webkit-filter: drop-shadow(4px 3px 0 rgba(0, 11, 77, 1));
       filter: drop-shadow(4px 3px 0 rgba(0, 11, 77, 1));
     }
@@ -699,6 +700,7 @@ footer {
       height: 70vh;
     }
     .mv-copy {
+      bottom: 15%;
       p {
         box-shadow: 2px 3px 0px 2px $sub;
         &:first-of-type {
@@ -707,7 +709,7 @@ footer {
       }
     }
     .mv-info {
-      padding: 40px 0 20px;
+      padding: 40px 14px 20px;
     }
     .mv-open {
       margin-bottom: 16px;
@@ -750,12 +752,12 @@ footer {
     border-radius: 20px;
     padding: 2em 1em;
     border: solid 2px $sub;
-    box-shadow: 6px 6px 0px $sub;
+    box-shadow: 4px 4px 0px $sub;
   }
   .sec-title {
     top: -25px;
     border: solid 2px $sub;
-    box-shadow: 4px 4px 0px #000b4d;
+    box-shadow: 3px 3px 0px #000b4d;
     border-radius: 10px;
     padding: 0.3em 1em;
 
@@ -774,7 +776,7 @@ footer {
       margin: 0 auto;
     }
     .cta-btn {
-      max-width: calc(300px - 6px);
+      max-width: 300px;
     }
   }
   #event {
@@ -829,11 +831,19 @@ footer {
     padding: 100px 0;
     .qa-list {
       .item {
-        box-shadow: 4px 4px 0px $sub;
+        box-shadow: 3px 3px 0px $sub;
       }
     }
   }
   .ft-bnr {
     padding: 60px 0;
+  }
+  footer {
+    .sns-list {
+      gap: 30px;
+      .sns {
+        width: 40px;
+      }
+    }
   }
 }
