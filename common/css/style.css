@@ -113,7 +113,8 @@ button {
     font-family: "M PLUS Rounded 1c", sans-serif; } }
 @media screen and (max-width: 540px) {
   #mv .mv-copy {
-    font-size: 22px; }
+    font-size: 20px;
+    font-weight: 800; }
 
   .lead {
     font-size: 13px;
@@ -721,7 +722,7 @@ footer {
 
   #mv .mv-logo {
     width: 80%;
-    padding: 32px 0 0 14px;
+    padding: 32px 0 0 12px;
     -webkit-filter: drop-shadow(4px 3px 0 #000b4d);
     filter: drop-shadow(4px 3px 0 #000b4d); }
   #mv .mv-bg {
@@ -788,7 +789,7 @@ footer {
       max-width: 300px; }
 
   #event .lead {
-    padding: 1.5em 0.3em 2em; }
+    padding: 2em 0.3em; }
   #event .event-list {
     border-radius: 20px;
     padding: 8px 10px; }
@@ -834,6 +835,7 @@ footer {
   footer .sns-list {
     gap: 30px; }
     footer .sns-list .sns {
-      width: 40px; } }
+      width: 40px;
+      border: solid 1px #fff; } }
 
 /*# sourceMappingURL=style.css.map */
