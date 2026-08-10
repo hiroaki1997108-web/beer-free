@@ -113,7 +113,8 @@ button {
     font-family: "M PLUS Rounded 1c", sans-serif; } }
 @media screen and (max-width: 540px) {
   #mv .mv-copy {
-    font-size: 20px; }
+    font-size: 20px;
+    font-weight: 800; }
 
   .lead {
     font-size: 13px;
@@ -730,7 +731,8 @@ footer {
   #mv .mv-copy {
     bottom: 15%; }
     #mv .mv-copy p {
-      box-shadow: 1px 3px 0px 1px #000b4d; }
+      box-shadow: 1px 3px 0px 1px #000b4d;
+      padding: 0.3em 1.2em 0.3em 0.6em; }
       #mv .mv-copy p:first-of-type {
         margin-bottom: 12px; }
   #mv .mv-info {
@@ -770,7 +772,7 @@ footer {
     box-shadow: 6px 6px 0px #000b4d; }
 
   .sec-title {
-    top: -25px;
+    top: -26px;
     border: solid 2px #000b4d;
     box-shadow: 3px 3px 0px #000b4d;
     border-radius: 10px;

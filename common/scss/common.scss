@@ -704,6 +704,7 @@ footer {
       bottom: 15%;
       p {
         box-shadow: 1px 3px 0px 1px $sub;
+        padding: 0.3em 1.2em 0.3em 0.6em;
         &:first-of-type {
           margin-bottom: 12px;
         }
@@ -756,7 +757,7 @@ footer {
     box-shadow: 6px 6px 0px $sub;
   }
   .sec-title {
-    top: -25px;
+    top: -26px;
     border: solid 2px $sub;
     box-shadow: 3px 3px 0px #000b4d;
     border-radius: 10px;
