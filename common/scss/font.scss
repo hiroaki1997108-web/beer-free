@@ -42,7 +42,7 @@ button {
 .sec-title {
   @include font-base(2.5em, 800);
   .st-sub {
-    font-size: 0.7em;
+    @include font-base(0.7em, 600);
   }
 }
 #event {

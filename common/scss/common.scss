@@ -40,7 +40,7 @@ section {
   }
   .mv-bg {
     width: 100%;
-    height: 110vh;
+    height: 120vh;
     object-fit: cover;
   }
   .mv-logo {
@@ -57,7 +57,7 @@ section {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 20%;
+    bottom: 25%;
     color: #000b4d;
     line-height: 1.6;
     p {
@@ -89,14 +89,14 @@ section {
 }
 .mv-wave {
   position: absolute;
-  bottom: -60px;
+  bottom: 0;
   left: 0;
   right: 0;
   width: 100%;
   margin: auto;
   &.wave-transf {
     bottom: auto;
-    top: -60px;
+    top: -1px;
     transform: rotate(180deg);
   }
 }
@@ -467,7 +467,7 @@ section {
 }
 
 #contents {
-  padding: 40px 0 240px;
+  padding: 40px 0 300px;
   background: $main;
   position: relative;
   .lead {
@@ -521,6 +521,7 @@ section {
 }
 
 #access {
+  padding: 60px 0;
   iframe {
     display: block;
     max-width: 800px;
@@ -547,7 +548,7 @@ section {
 #qa {
   background: #9ddaff;
   position: relative;
-  padding: 180px 0;
+  padding: 240px 0;
   .qa-list {
     max-width: 800px;
     width: 100%;
@@ -619,7 +620,7 @@ section {
 }
 
 .ft-bnr {
-  padding: 120px 0;
+  padding: 60px 0;
   position: relative;
   .cta-bnr {
     display: block;
@@ -635,7 +636,7 @@ section {
 }
 
 footer {
-  padding: 160px 0 20px;
+  padding: 240px 0 20px;
   background: $main;
   position: relative;
   .sns-list {
@@ -672,7 +673,7 @@ footer {
     margin: auto;
   }
   footer {
-    padding: 60px 0 160px;
+    padding: 100px 0 160px;
   }
   .wave {
     top: 60px;
@@ -706,7 +707,7 @@ footer {
       }
     }
     .mv-info {
-      padding: 40px 14px 0;
+      padding: 40px 0 20px;
     }
     .mv-open {
       margin-bottom: 16px;
@@ -759,13 +760,19 @@ footer {
     padding: 0.3em 1em;
 
     .st-sub {
-      top: -22px;
+      top: -28px;
       right: -25px;
+      &::before {
+        width: 6px;
+      }
     }
   }
 
   #ticket-buy {
-    padding: 60px 0 40px;
+    padding: 80px 0;
+    .text {
+      margin: 0 auto;
+    }
     .cta-btn {
       max-width: calc(300px - 6px);
     }
@@ -792,7 +799,7 @@ footer {
     }
   }
   #brewery {
-    padding: 60px 0;
+    padding: 40px 0;
     .lead {
       padding: 1.5em 0.3em 2em;
     }
@@ -802,7 +809,7 @@ footer {
     }
   }
   #contents {
-    padding: 40px 0;
+    padding: 40px 0 120px;
     .lead {
       padding: 1.5em 0.3em 2em;
     }
@@ -818,7 +825,15 @@ footer {
       padding: 40px 12px 16px;
     }
   }
+  #qa {
+    padding: 100px 0;
+    .qa-list {
+      .item {
+        box-shadow: 4px 4px 0px $sub;
+      }
+    }
+  }
   .ft-bnr {
-    padding: 40px 0 0;
+    padding: 60px 0;
   }
 }
