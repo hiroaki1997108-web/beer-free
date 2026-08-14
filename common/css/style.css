@@ -186,12 +186,14 @@ section {
     left: 0;
     max-width: 600px;
     width: 90%;
-    padding: 2em 0 0 1em; }
+    padding: 2em 0 0 1em;
+    -webkit-filter: drop-shadow(0 0 12px rgba(0, 11, 77, 0.2));
+    filter: drop-shadow(0 0 12px rgba(0, 11, 77, 0.2)); }
   #mv .mv-copy {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 25%;
+    bottom: 23%;
     color: #fff;
     line-height: 1.6; }
     #mv .mv-copy p {
