@@ -40,9 +40,9 @@ button {
   @include font-base(1.25em, 500);
 }
 .sec-title {
-  @include font-base(2.5em, 800);
+  @include font-base(3em, 800);
   .st-sub {
-    @include font-base(0.7em, 600);
+    @include font-base(0.5em, 600);
   }
 }
 #event {
@@ -97,7 +97,10 @@ button {
     @include font-base(13px, 600);
   }
   .sec-title {
-    font-size: 22px;
+    font-size: 26px;
+    .st-sub {
+      font-size: 14px;
+    }
   }
   #ticket-buy {
     .text {

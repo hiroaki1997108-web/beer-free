@@ -273,7 +273,7 @@ section {
 
 #ticket-buy {
   background: $main;
-  padding: 80px 0 200px;
+  padding: 80px 0 120px;
   .heading {
     max-width: 700px;
     width: 100%;
@@ -333,11 +333,14 @@ section {
   width: 100%;
   margin: auto;
   background: #fff;
-  padding: 4em 1em;
   border-radius: 40px;
   box-shadow: 8px 8px 0px $sub;
-  border: solid 3px $sub;
+  border: solid 4px $sub;
   position: relative;
+  overflow: hidden;
+}
+.container-in {
+  padding: 0 1em 4em;
 }
 .sec-heading {
   max-width: 700px;
@@ -345,40 +348,16 @@ section {
   margin: auto;
 }
 .sec-title {
-  position: absolute;
-  top: -50px;
-  left: 0;
-  right: 0;
-  padding: 0.5em 1em 0.4em;
-  background: #fff;
-  border-radius: 0.4em;
-  border: solid 3px $sub;
-  box-shadow: 6px 6px 0px $sub;
-  width: fit-content;
-  margin: auto;
-  color: $sub;
+  background: #3bbd4c;
+  color: #fff;
+  padding: 0.75em 1em 0.5em;
+  text-align: center;
+  line-height: 1.2;
   .st-sub {
-    position: absolute;
-    top: -40px;
-    right: -45px;
-    width: fit-content;
-    border: solid 2px $sub;
-    box-shadow: 2px 2px 0px $sub;
-    background: #ffe491;
+    border: solid 3px $main;
     border-radius: 0.3em;
-    padding: 0em 0.4em;
-    transform: rotate(18deg);
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: -12px;
-      left: 0;
-      right: 0;
-      width: 8px;
-      height: 10px;
-      background: $sub;
-      margin: auto;
-    }
+    padding: 0em 0.6em;
+    color: $main;
   }
 }
 
@@ -432,7 +411,7 @@ section {
 }
 
 #brewery {
-  padding: 120px 0;
+  padding: 80px 0;
   background: $main;
   .lead {
     padding: 2em 0;
@@ -534,6 +513,9 @@ section {
     max-width: 800px;
     width: 100%;
     margin: 2em auto;
+    box-shadow: 4px 4px 0 0px $sub;
+    border: solid 2px $sub;
+    border-radius: 20px;
   }
   .access-text {
     max-width: 800px;
@@ -758,28 +740,20 @@ footer {
   }
   .container {
     border-radius: 20px;
-    padding: 2em 1em;
-    border: solid 2px $sub;
+    border: solid 3px $sub;
     box-shadow: 6px 6px 0px $sub;
   }
+  .container-in {
+    padding: 0 1em 2em;
+  }
   .sec-title {
-    top: -26px;
-    border: solid 2px $sub;
-    box-shadow: 3px 3px 0px $sub;
-    border-radius: 10px;
-    padding: 0.3em 1em;
-
     .st-sub {
-      top: -28px;
-      right: -25px;
-      &::before {
-        width: 6px;
-      }
+      border: solid 2px $main;
     }
   }
 
   #ticket-buy {
-    padding: 80px 0;
+    padding: 80px 0 60px;
     .text {
       margin: 0 auto;
     }
@@ -788,6 +762,7 @@ footer {
     }
   }
   #event {
+    padding: 20px 0;
     .lead {
       padding: 2em 0.3em;
     }
@@ -809,7 +784,7 @@ footer {
     }
   }
   #brewery {
-    padding: 40px 0;
+    padding: 20px 0;
     .lead {
       padding: 1.5em 0.3em 2em;
     }
@@ -819,7 +794,7 @@ footer {
     }
   }
   #contents {
-    padding: 40px 0 120px;
+    padding: 20px 0 120px;
     .lead {
       padding: 1.5em 0.3em 2em;
     }
