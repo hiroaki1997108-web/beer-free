@@ -114,6 +114,7 @@ section {
   padding: 0.5em;
   border-radius: 10px;
   box-shadow: 4px 4px 0 0 $sub;
+  background: linear-gradient(#ffda6c, #ffbf00 50%);
   .text {
     position: relative;
     text-align: center;
@@ -149,10 +150,19 @@ section {
     width: 100%;
     background: #fff;
     color: $sub;
-    padding: 0.5em 1em;
+    padding: 0.5em 1em 0.5em 0.6em;
     text-align: center;
     border: solid 2px $sub;
     border-radius: 10px;
+    position: relative;
+    &::before {
+      content: "▶︎";
+      position: absolute;
+      top: 50%;
+      right: 10%;
+      transform: translate(0, -50%);
+      font-size: 0.8em;
+    }
     &:hover {
       background: $sub;
       color: #fff;
@@ -273,6 +283,7 @@ section {
 
 #ticket-buy {
   background: $main;
+  background: linear-gradient(#ffd452, #ffc107 50%);
   padding: 80px 0 120px;
   .heading {
     max-width: 700px;
@@ -281,7 +292,7 @@ section {
   }
   .text {
     text-align: center;
-    text-shadow: 0 0 6px #fff;
+    text-shadow: 0 0 8px #fff;
     padding: 2em 1em;
     color: $sub;
     width: fit-content;
@@ -348,7 +359,8 @@ section {
   margin: auto;
 }
 .sec-title {
-  background: #3bbd4c;
+  background: #40cc53;
+  background: linear-gradient(#47f25e, #11a926);
   color: #fff;
   padding: 0.75em 1em 0.5em;
   text-align: center;
@@ -356,7 +368,6 @@ section {
   border-bottom: solid 4px $sub;
   text-shadow: 4px 4px 0 #0b4013;
   .st-sub {
-    // border: solid 3px #156e21;
     border: solid 3px #0b4013;
     border-radius: 1em;
     padding: 0em 1em;
@@ -408,7 +419,6 @@ section {
           height: 10px;
           border-radius: 10px;
           background: #fff;
-          border: solid 2px $sub;
         }
       }
     }
@@ -434,6 +444,9 @@ section {
     text-align: center;
     border-radius: 2em;
     border: solid 3px $sub;
+    background: linear-gradient(#7f92ff, #00158b 50%);
+    box-shadow: 0px 4px 0 0 #000b4d;
+    position: relative;
     &:hover {
       background: #fff;
       color: $sub;
@@ -443,7 +456,7 @@ section {
 .brewery-list {
   max-width: 900px;
   width: 100%;
-  margin: 0 auto 2em;
+  margin: 0 auto 3em;
 
   .swiper-wrapper {
     transition-timing-function: linear !important;
@@ -466,15 +479,15 @@ section {
     line-height: 1.6;
   }
   .pickup-head {
-    display: block;
-    max-width: 180px;
-    width: 40%;
+    box-sizing: border-box;
+    max-width: 900px;
     margin: auto;
-    background: #ffce48;
-    padding: 20px 60px 10px;
-    border-radius: 40px;
+    background: #ffc107;
+    border-radius: 20px 20px 0 0;
     position: relative;
     top: 74px;
+    text-align: center;
+    padding: 0.4em 1em;
   }
   .pickup-flex {
     max-width: 900px;
@@ -485,7 +498,7 @@ section {
     padding: 6em 2em 2em;
     box-sizing: border-box;
     border-radius: 20px;
-    background: #b0f0fd;
+    background: #fff1cb;
     .item {
       width: 30%;
       p {
@@ -785,7 +798,6 @@ footer {
           &::before {
             width: 6px;
             height: 6px;
-            border: solid 1px $sub;
           }
         }
       }
@@ -807,9 +819,7 @@ footer {
       padding: 1.5em 0.3em 2em;
     }
     .pickup-head {
-      max-width: 120px;
-      width: 25%;
-      padding: 12px 40px 8px;
+      padding: 10px 20px;
       top: 25px;
     }
     .pickup-flex {
