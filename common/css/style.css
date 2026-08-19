@@ -25,6 +25,12 @@ button {
   font-weight: 600;
   font-family: "Zen Maru Gothic", sans-serif;
   font-family: "M PLUS Rounded 1c", sans-serif; }
+#mv .mv-text {
+  font-size: 2.5em;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 800;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif; }
 
 .cta-btn {
   font-size: 1.5em;
@@ -120,6 +126,8 @@ button {
 @media screen and (max-width: 540px) {
   #mv .mv-copy {
     font-size: 20px; }
+  #mv .mv-text {
+    font-size: 18px; }
 
   .lead {
     font-size: 14px;
@@ -219,13 +227,14 @@ section {
     max-width: 1000px;
     width: 100%;
     margin: auto;
-    padding-top: 120px; }
+    padding-top: 120px;
+    padding: 120px 1em 0; }
   #mv .mv-open {
     margin-bottom: 2em; }
   #mv .mv-text {
-    max-width: 600px;
-    width: 100%;
-    margin: 4em auto; }
+    margin: 2em auto;
+    text-align: center;
+    color: #000b4d; }
 
 .mv-wave {
   position: absolute;
@@ -750,8 +759,7 @@ footer {
   #mv .mv-open {
     margin-bottom: 16px; }
   #mv .mv-text {
-    width: 80%;
-    margin: 28px auto 0; }
+    margin: 32px auto 0; }
 
   .wave {
     top: 40px; }

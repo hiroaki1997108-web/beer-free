@@ -15,6 +15,9 @@ button {
   .mv-copy {
     @include font-base(2.2em, 600);
   }
+  .mv-text {
+    @include font-base(2.5em, 800);
+  }
 }
 
 .cta-btn {
@@ -93,6 +96,9 @@ button {
   #mv {
     .mv-copy {
       font-size: 20px;
+    }
+    .mv-text {
+      font-size: 18px;
     }
   }
   .lead {

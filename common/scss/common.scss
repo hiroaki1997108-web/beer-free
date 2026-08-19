@@ -81,14 +81,15 @@ section {
     width: 100%;
     margin: auto;
     padding-top: 120px;
+    padding: 120px 1em 0;
   }
   .mv-open {
     margin-bottom: 2em;
   }
   .mv-text {
-    max-width: 600px;
-    width: 100%;
-    margin: 4em auto;
+    margin: 2em auto;
+    text-align: center;
+    color: $sub;
   }
 }
 .mv-wave {
@@ -722,8 +723,7 @@ footer {
       margin-bottom: 16px;
     }
     .mv-text {
-      width: 80%;
-      margin: 28px auto 0;
+      margin: 32px auto 0;
     }
   }
   .wave {
