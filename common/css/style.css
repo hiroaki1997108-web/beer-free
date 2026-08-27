@@ -90,6 +90,13 @@ button {
   font-family: "Zen Maru Gothic", sans-serif;
   font-family: "M PLUS Rounded 1c", sans-serif; }
 
+#brewery .btn {
+  font-size: 1.5em;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 600;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif; }
+
 #contents .pickup-head {
   font-size: 2.5em;
   font-family: "Noto Sans JP", sans-serif;
@@ -131,7 +138,7 @@ button {
 
   .lead {
     font-size: 14px;
-    font-weight: 500; }
+    font-weight: 600; }
 
   .sec-title {
     font-size: 26px; }
@@ -523,7 +530,7 @@ section {
   #brewery .lead {
     padding: 2em 0;
     line-height: 1.6; }
-  #brewery .cta-btn {
+  #brewery .btn {
     box-sizing: border-box;
     display: block;
     max-width: 400px;
@@ -536,8 +543,8 @@ section {
     border: solid 3px #000b4d;
     box-shadow: 0px 4px 0 0 #000b4d;
     position: relative;
-    background: #001ab2; }
-    #brewery .cta-btn:hover {
+    background: #8800d7; }
+    #brewery .btn:hover {
       background: #fff;
       color: #000b4d; }
 
@@ -798,14 +805,14 @@ footer {
 
   .container {
     border-radius: 20px;
-    border: solid 3px #000b4d;
+    border: solid 2px #000b4d;
     box-shadow: 6px 6px 0px #000b4d; }
 
   .container-in {
     padding: 0 1em 2em; }
 
   .sec-title {
-    border-bottom: solid 3px #000b4d;
+    border-bottom: solid 2px #000b4d;
     text-shadow: 2px 2px 0 #0b4013; }
     .sec-title .st-sub {
       border: solid 2px #0b4013; }
@@ -815,7 +822,9 @@ footer {
     #ticket-buy .text {
       margin: 0 auto; }
     #ticket-buy .cta-btn {
-      max-width: 300px; }
+      max-width: 300px;
+      border: solid 2px #430279;
+      box-shadow: 0 4px 0 0 #430279; }
 
   #event {
     padding: 20px 0; }
