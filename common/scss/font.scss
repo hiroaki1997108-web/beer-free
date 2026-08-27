@@ -67,7 +67,7 @@ button {
 }
 #contents {
   .pickup-head {
-    @include font-base(2.5em, 900);
+    @include font-base(3em, 900);
   }
   .pickup-flex {
     .item {
@@ -139,7 +139,7 @@ button {
   }
   #contents {
     .pickup-head {
-      font-size: 24px;
+      font-size: 30px;
     }
     .pickup-flex {
       .item {

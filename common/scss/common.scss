@@ -486,7 +486,7 @@ section {
     position: relative;
     top: 74px;
     text-align: center;
-    padding: 0.4em 1em;
+    padding: 0.2em 1em;
   }
   .pickup-flex {
     max-width: 900px;
@@ -808,7 +808,7 @@ footer {
       padding: 2em 0.3em;
     }
     .event-list {
-      border-radius: 20px;
+      border-radius: 10px;
       padding: 8px 10px;
       .item {
         .head {
@@ -839,12 +839,13 @@ footer {
       padding: 1.5em 0.3em 2em;
     }
     .pickup-head {
-      padding: 10px 20px;
+      padding: 5px 20px;
       top: 25px;
+      border-radius: 10px 10px 0 0;
     }
     .pickup-flex {
       margin: 0 auto;
-      border-radius: 20px;
+      border-radius: 10px;
       padding: 40px 12px 16px;
     }
   }
