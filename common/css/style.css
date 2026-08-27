@@ -219,7 +219,7 @@ section {
       border: solid 2px #fff;
       border-left: none;
       text-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
-      background: rgba(255, 255, 255, 0.2); }
+      background: rgba(0, 11, 77, 0.1); }
       #mv .mv-copy p:first-of-type {
         margin-bottom: 20px; }
   #mv .mv-info {
@@ -680,6 +680,19 @@ section {
         background: #fff;
         padding: 1em;
         border-radius: 0 0 10px 10px; }
+
+#sponsor .sponsor-in {
+  max-width: 1000px;
+  width: 100%;
+  margin: auto; }
+#sponsor .sponsor-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px; }
+  #sponsor .sponsor-list .item img {
+    border-radius: 20px;
+    box-shadow: 4px 4px 0 0 #000b4d;
+    border: solid 2px #000b4d; }
 
 .ft-bnr {
   padding: 60px 0;
