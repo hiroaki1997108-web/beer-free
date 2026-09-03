@@ -87,6 +87,11 @@ button {
     @include font-base(1.1em, 600);
   }
 }
+footer {
+  .sns-head {
+    font-size: 1.5em;
+  }
+}
 .copy-right {
   font-size: 12px;
 }
@@ -135,6 +140,11 @@ button {
           font-size: 14px;
         }
       }
+    }
+  }
+  #brewery {
+    .btn {
+      font-size: 18px;
     }
   }
   #contents {
