@@ -48,6 +48,12 @@ button {
     @include font-base(0.5em, 500);
   }
 }
+.sec-title2 {
+  @include font-base(3em, 800);
+  .sub {
+    @include font-base(2.75em, 800);
+  }
+}
 #event {
   .event-list {
     .item {
@@ -120,6 +126,12 @@ footer {
     .st-sub {
       font-size: 14px;
       font-weight: 600;
+    }
+  }
+  .sec-title2 {
+    font-size: 28px;
+    .sub {
+      font-size: 68px;
     }
   }
   #ticket-buy {

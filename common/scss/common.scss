@@ -398,7 +398,7 @@ section {
     width: 100%;
     margin: auto;
     padding: 0.8em 1em 0.8em 0.4em;
-    background: linear-gradient(#e0a6ff, #8800d7);
+    background: linear-gradient(#e0a6ff, #8800d7 80%);
     color: #fff;
     text-align: center;
     border-radius: 2em;
@@ -440,7 +440,6 @@ section {
 }
 .sec-title {
   background: #40cc53;
-  // background: linear-gradient(#47f25e, #11a926);
   color: #fff;
   padding: 0.75em 1em 0.5em;
   text-align: center;
@@ -454,6 +453,24 @@ section {
     color: #0b4013;
     background: $main;
     text-shadow: none;
+  }
+}
+.sec-title2 {
+  position: relative;
+  text-align: center;
+  color: $sub;
+  margin-bottom: 1em;
+  .sub {
+    width: fit-content;
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #ffc107;
+    z-index: -1;
+    opacity: 0.2;
+    letter-spacing: 2px;
   }
 }
 
@@ -525,7 +542,7 @@ section {
     border: solid 3px $sub;
     box-shadow: 0px 4px 0 0 #000b4d;
     position: relative;
-    background: #8800d7;
+    background: #3e20e0;
     &:hover {
       background: #fff;
       color: $sub;
@@ -604,7 +621,7 @@ section {
 }
 
 #access {
-  padding: 60px 0;
+  padding: 120px 0 80px;
   iframe {
     box-sizing: border-box;
     display: block;
@@ -707,7 +724,7 @@ section {
 }
 
 #sponsor {
-  // background: url(../images/party_audie.jpg);
+  padding: 120px 0 160px;
   .sponsor-in {
     max-width: 1000px;
     width: 100%;
@@ -730,10 +747,9 @@ section {
 }
 
 .ft-bnr {
-  padding: 160px 0;
+  padding: 140px 0;
   position: relative;
-  background: url(../images/party_audie.jpg);
-  // background-position: top;
+  background: url(../images/bnr-bg.jpg);
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.4);
   background-blend-mode: darken;
@@ -747,6 +763,37 @@ section {
 
     img {
       border-radius: 10px;
+    }
+  }
+}
+#contact {
+  padding: 200px 0 120px;
+  .contact-box {
+    box-sizing: border-box;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    box-shadow: 6px 6px 0 0 $sub;
+    border-radius: 20px;
+    border: solid 2px $sub;
+    padding: 3em 1em;
+    .mail-lead {
+      text-align: center;
+      padding-bottom: 2em;
+    }
+    .mail-btn {
+      box-sizing: border-box;
+      display: block;
+      max-width: 350px;
+      width: 90%;
+      margin: auto;
+      text-align: center;
+      padding: 1em 2em;
+      border-radius: 40px;
+      background: #3e20e0;
+      border: solid 3px $sub;
+      box-shadow: 0px 4px 0 0 $sub;
+      color: #fff;
     }
   }
 }
@@ -919,6 +966,12 @@ footer {
       border: solid 2px #0b4013;
     }
   }
+  .sec-title2 {
+    margin-bottom: 1em;
+    .sub {
+      bottom: -15px;
+    }
+  }
 
   #ticket-buy {
     padding: 80px 0 60px;
@@ -978,6 +1031,7 @@ footer {
     }
   }
   #access {
+    padding: 80px 0 60px;
     iframe {
       box-shadow: 4px 4px 0 0px $sub;
       border: solid 2px $sub;
@@ -994,7 +1048,7 @@ footer {
     }
   }
   #sponsor {
-    padding: 60px 0 80px;
+    padding: 80px 0;
     .sponsor-list {
       gap: 20px 5%;
       .item {
@@ -1008,6 +1062,9 @@ footer {
   }
   .ft-bnr {
     padding: 60px 0;
+  }
+  #contact {
+    padding: 100px 0 80px;
   }
   footer {
     .sns-list {
