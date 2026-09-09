@@ -1077,6 +1077,9 @@ footer {
 
   #contact {
     padding: 100px 0 80px; }
+    #contact .mail-btn {
+      border: solid 2px #000b4d;
+      box-shadow: 0px 3px 0 0 #000b4d; }
 
   footer .sns-list {
     gap: 30px; }
