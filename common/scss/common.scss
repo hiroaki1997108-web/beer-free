@@ -433,11 +433,6 @@ section {
 .container-in {
   padding: 0 1em 4em;
 }
-.sec-heading {
-  max-width: 700px;
-  width: 100%;
-  margin: auto;
-}
 .sec-title {
   background: #40cc53;
   color: #fff;
@@ -653,6 +648,11 @@ section {
   background: #9ddaff;
   position: relative;
   padding: 240px 0;
+  .sec-title2 {
+    .sub {
+      color: #0776ff;
+    }
+  }
   .qa-list {
     max-width: 800px;
     width: 100%;
@@ -1044,7 +1044,7 @@ footer {
     }
   }
   #qa {
-    padding: 100px 0;
+    padding: 120px 0 100px;
     .qa-list {
       .item {
         box-shadow: 3px 3px 0px $sub;
