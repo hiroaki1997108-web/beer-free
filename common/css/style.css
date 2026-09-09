@@ -133,6 +133,13 @@ button {
   font-family: "Zen Maru Gothic", sans-serif;
   font-family: "M PLUS Rounded 1c", sans-serif; }
 
+#contact .mail-btn {
+  font-size: 1.5em;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 600;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif; }
+
 footer .sns-head {
   font-size: 1.5em; }
 
@@ -187,7 +194,10 @@ footer .sns-head {
     font-size: 11px; }
 
   #qa .qa-list {
-    font-size: 14px; } }
+    font-size: 14px; }
+
+  #contact .mail-btn {
+    font-size: 18px; } }
 html,
 body {
   width: 100%;
@@ -642,7 +652,7 @@ section {
     box-sizing: border-box;
     display: block;
     max-width: 400px;
-    width: 80%;
+    width: 90%;
     margin: auto;
     padding: 0.5em 1em;
     color: #fff;
@@ -841,23 +851,26 @@ section {
     box-shadow: 6px 6px 0 0 #000b4d;
     border-radius: 20px;
     border: solid 2px #000b4d;
-    padding: 3em 1em; }
-    #contact .contact-box .mail-lead {
-      text-align: center;
-      padding-bottom: 2em; }
-    #contact .contact-box .mail-btn {
-      box-sizing: border-box;
-      display: block;
-      max-width: 350px;
-      width: 90%;
-      margin: auto;
-      text-align: center;
-      padding: 1em 2em;
-      border-radius: 40px;
-      background: #3e20e0;
-      border: solid 3px #000b4d;
-      box-shadow: 0px 4px 0 0 #000b4d;
-      color: #fff; }
+    padding: 2em 1em; }
+  #contact .mail-lead {
+    text-align: center;
+    padding-bottom: 2em; }
+  #contact .mail-btn {
+    box-sizing: border-box;
+    display: block;
+    max-width: 350px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 0.5em 1em;
+    color: #fff;
+    border-radius: 2em;
+    border: solid 3px #000b4d;
+    box-shadow: 0px 4px 0 0 #000b4d;
+    background: #3e20e0; }
+    #contact .mail-btn:hover {
+      background: #fff;
+      color: #000b4d; }
 
 footer {
   padding: 240px 0 20px;

@@ -533,7 +533,7 @@ section {
     box-sizing: border-box;
     display: block;
     max-width: 400px;
-    width: 80%;
+    width: 90%;
     margin: auto;
     padding: 0.5em 1em;
     color: #fff;
@@ -776,24 +776,28 @@ section {
     box-shadow: 6px 6px 0 0 $sub;
     border-radius: 20px;
     border: solid 2px $sub;
-    padding: 3em 1em;
-    .mail-lead {
-      text-align: center;
-      padding-bottom: 2em;
-    }
-    .mail-btn {
-      box-sizing: border-box;
-      display: block;
-      max-width: 350px;
-      width: 90%;
-      margin: auto;
-      text-align: center;
-      padding: 1em 2em;
-      border-radius: 40px;
-      background: #3e20e0;
-      border: solid 3px $sub;
-      box-shadow: 0px 4px 0 0 $sub;
-      color: #fff;
+    padding: 2em 1em;
+  }
+  .mail-lead {
+    text-align: center;
+    padding-bottom: 2em;
+  }
+  .mail-btn {
+    box-sizing: border-box;
+    display: block;
+    max-width: 350px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 0.5em 1em;
+    color: #fff;
+    border-radius: 2em;
+    border: solid 3px $sub;
+    box-shadow: 0px 4px 0 0 $sub;
+    background: #3e20e0;
+    &:hover {
+      background: #fff;
+      color: $sub;
     }
   }
 }

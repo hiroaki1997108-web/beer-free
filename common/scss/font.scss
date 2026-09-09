@@ -93,6 +93,11 @@ button {
     @include font-base(1.1em, 600);
   }
 }
+#contact {
+  .mail-btn {
+    @include font-base(1.5em, 600);
+  }
+}
 footer {
   .sns-head {
     font-size: 1.5em;
@@ -174,6 +179,11 @@ footer {
   #qa {
     .qa-list {
       font-size: 14px;
+    }
+  }
+  #contact {
+    .mail-btn {
+      font-size: 18px;
     }
   }
 }
