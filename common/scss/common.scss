@@ -251,16 +251,15 @@ section {
   .close-btn {
     cursor: pointer;
     position: absolute;
-    top: -0.7em;
-    left: -0.7em;
+    top: -10px;
+    left: -10px;
     width: 30px;
     height: 30px;
     background: $sub;
     color: #fff;
     border-radius: 50%;
     text-align: center;
-    line-height: 28px;
-    font-weight: 800;
+    line-height: 30px;
   }
 }
 
@@ -418,6 +417,25 @@ section {
   }
 }
 
+.main-btn {
+  box-sizing: border-box;
+  display: block;
+  max-width: 400px;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding: 0.5em 1em;
+  color: #fff;
+  border-radius: 40px;
+  border: solid 3px $sub;
+  box-shadow: 0px 4px 0 0 #000b4d;
+  background: #3e20e0;
+  &:hover {
+    background: #fff;
+    color: $sub;
+  }
+}
+
 .container {
   box-sizing: border-box;
   max-width: 1000px;
@@ -523,25 +541,6 @@ section {
   .lead {
     padding: 2em 0;
     line-height: 1.6;
-  }
-  .btn {
-    box-sizing: border-box;
-    display: block;
-    max-width: 400px;
-    width: 90%;
-    margin: auto;
-    padding: 0.5em 1em;
-    color: #fff;
-    text-align: center;
-    border-radius: 2em;
-    border: solid 3px $sub;
-    box-shadow: 0px 4px 0 0 #000b4d;
-    position: relative;
-    background: #3e20e0;
-    &:hover {
-      background: #fff;
-      color: $sub;
-    }
   }
 }
 .brewery-list {
@@ -775,30 +774,12 @@ section {
     margin: auto;
     box-shadow: 6px 6px 0 0 $sub;
     border-radius: 20px;
-    border: solid 2px $sub;
+    border: solid 3px $sub;
     padding: 2em 1em;
   }
   .mail-lead {
     text-align: center;
     padding-bottom: 2em;
-  }
-  .mail-btn {
-    box-sizing: border-box;
-    display: block;
-    max-width: 350px;
-    width: 90%;
-    margin: auto;
-    text-align: center;
-    padding: 0.5em 1em;
-    color: #fff;
-    border-radius: 2em;
-    border: solid 3px $sub;
-    box-shadow: 0px 4px 0 0 $sub;
-    background: #3e20e0;
-    &:hover {
-      background: #fff;
-      color: $sub;
-    }
   }
 }
 
@@ -955,6 +936,10 @@ footer {
       height: 20px;
     }
   }
+  .main-btn {
+    border: solid 2px $sub;
+    box-shadow: 0px 3px 0 0 $sub;
+  }
   .container {
     border-radius: 20px;
     border: solid 2px $sub;
@@ -1069,9 +1054,9 @@ footer {
   }
   #contact {
     padding: 100px 0 80px;
-    .mail-btn {
+    .contact-box {
+      box-shadow: 4px 4px 0 0 $sub;
       border: solid 2px $sub;
-      box-shadow: 0px 3px 0 0 $sub;
     }
   }
   footer {

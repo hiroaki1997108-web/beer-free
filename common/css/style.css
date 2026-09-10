@@ -50,6 +50,13 @@ button {
   font-family: "Zen Maru Gothic", sans-serif;
   font-family: "M PLUS Rounded 1c", sans-serif; }
 
+.main-btn {
+  font-size: 1.5em;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 600;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif; }
+
 #ticket-buy .text {
   font-size: 1.25em;
   font-family: "Noto Sans JP", sans-serif;
@@ -98,13 +105,6 @@ button {
   font-family: "M PLUS Rounded 1c", sans-serif; }
 #event .event-list .item .desc {
   font-size: 1.25em;
-  font-family: "Noto Sans JP", sans-serif;
-  font-weight: 600;
-  font-family: "Zen Maru Gothic", sans-serif;
-  font-family: "M PLUS Rounded 1c", sans-serif; }
-
-#brewery .btn {
-  font-size: 1.5em;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 600;
   font-family: "Zen Maru Gothic", sans-serif;
@@ -159,6 +159,9 @@ footer .sns-head {
   #mv .mv-text {
     font-size: 18px; }
 
+  .main-btn {
+    font-size: 18px; }
+
   .lead {
     font-size: 14px;
     font-weight: 600; }
@@ -184,9 +187,6 @@ footer .sns-head {
     font-size: 15px; }
   #event .event-list .item .desc {
     font-size: 14px; }
-
-  #brewery .btn {
-    font-size: 18px; }
 
   #contents .pickup-head {
     font-size: 30px; }
@@ -415,16 +415,15 @@ section {
   .side-fixed .close-btn {
     cursor: pointer;
     position: absolute;
-    top: -0.7em;
-    left: -0.7em;
+    top: -10px;
+    left: -10px;
     width: 30px;
     height: 30px;
     background: #000b4d;
     color: #fff;
     border-radius: 50%;
     text-align: center;
-    line-height: 28px;
-    font-weight: 800; }
+    line-height: 30px; }
 
 .wave {
   position: relative;
@@ -548,6 +547,23 @@ section {
       transform: translate(0, -50%);
       font-size: 0.8em; }
 
+.main-btn {
+  box-sizing: border-box;
+  display: block;
+  max-width: 400px;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding: 0.5em 1em;
+  color: #fff;
+  border-radius: 40px;
+  border: solid 3px #000b4d;
+  box-shadow: 0px 4px 0 0 #000b4d;
+  background: #3e20e0; }
+  .main-btn:hover {
+    background: #fff;
+    color: #000b4d; }
+
 .container {
   box-sizing: border-box;
   max-width: 1000px;
@@ -643,23 +659,6 @@ section {
   #brewery .lead {
     padding: 2em 0;
     line-height: 1.6; }
-  #brewery .btn {
-    box-sizing: border-box;
-    display: block;
-    max-width: 400px;
-    width: 90%;
-    margin: auto;
-    padding: 0.5em 1em;
-    color: #fff;
-    text-align: center;
-    border-radius: 2em;
-    border: solid 3px #000b4d;
-    box-shadow: 0px 4px 0 0 #000b4d;
-    position: relative;
-    background: #3e20e0; }
-    #brewery .btn:hover {
-      background: #fff;
-      color: #000b4d; }
 
 .brewery-list {
   max-width: 900px;
@@ -847,27 +846,11 @@ section {
     margin: auto;
     box-shadow: 6px 6px 0 0 #000b4d;
     border-radius: 20px;
-    border: solid 2px #000b4d;
+    border: solid 3px #000b4d;
     padding: 2em 1em; }
   #contact .mail-lead {
     text-align: center;
     padding-bottom: 2em; }
-  #contact .mail-btn {
-    box-sizing: border-box;
-    display: block;
-    max-width: 350px;
-    width: 90%;
-    margin: auto;
-    text-align: center;
-    padding: 0.5em 1em;
-    color: #fff;
-    border-radius: 2em;
-    border: solid 3px #000b4d;
-    box-shadow: 0px 4px 0 0 #000b4d;
-    background: #3e20e0; }
-    #contact .mail-btn:hover {
-      background: #fff;
-      color: #000b4d; }
 
 footer {
   padding: 240px 0 20px;
@@ -986,6 +969,10 @@ footer {
     width: 20px;
     height: 20px; }
 
+  .main-btn {
+    border: solid 2px #000b4d;
+    box-shadow: 0px 3px 0 0 #000b4d; }
+
   .container {
     border-radius: 20px;
     border: solid 2px #000b4d;
@@ -1077,9 +1064,9 @@ footer {
 
   #contact {
     padding: 100px 0 80px; }
-    #contact .mail-btn {
-      border: solid 2px #000b4d;
-      box-shadow: 0px 3px 0 0 #000b4d; }
+    #contact .contact-box {
+      box-shadow: 4px 4px 0 0 #000b4d;
+      border: solid 2px #000b4d; }
 
   footer .sns-list {
     gap: 30px; }

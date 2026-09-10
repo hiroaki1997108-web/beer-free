@@ -34,6 +34,9 @@ button {
     @include font-base(1.25em, 600);
   }
 }
+.main-btn {
+  @include font-base(1.5em, 600);
+}
 #ticket-buy {
   .text {
     @include font-base(1.25em, 600);
@@ -64,11 +67,6 @@ button {
         @include font-base(1.25em, 600);
       }
     }
-  }
-}
-#brewery {
-  .btn {
-    @include font-base(1.5em, 600);
   }
 }
 #contents {
@@ -122,6 +120,9 @@ footer {
       font-size: 18px;
     }
   }
+  .main-btn {
+    font-size: 18px;
+  }
   .lead {
     font-size: 14px;
     font-weight: 600;
@@ -157,11 +158,6 @@ footer {
           font-size: 14px;
         }
       }
-    }
-  }
-  #brewery {
-    .btn {
-      font-size: 18px;
     }
   }
   #contents {
