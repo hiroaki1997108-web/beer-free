@@ -155,7 +155,8 @@ footer .sns-head {
     font-family: "M PLUS Rounded 1c", sans-serif; } }
 @media screen and (max-width: 540px) {
   #mv .mv-copy {
-    font-size: 20px; }
+    font-size: 20px;
+    font-weight: 800; }
   #mv .mv-text {
     font-size: 18px; }
 
@@ -233,7 +234,7 @@ section {
     position: relative; }
   #mv .mv-bg {
     width: 100%;
-    height: 120vh;
+    height: 105vh;
     object-fit: cover;
     filter: brightness(0.9); }
   #mv .mv-logo {
@@ -242,14 +243,14 @@ section {
     left: 0;
     max-width: 600px;
     width: 90%;
-    padding: 2em 0 0 1em;
+    padding: 1em 0 0 1em;
     -webkit-filter: drop-shadow(0 0 12px rgba(0, 11, 77, 0.2));
     filter: drop-shadow(0 0 12px rgba(0, 11, 77, 0.2)); }
   #mv .mv-copy {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 23%;
+    bottom: 20%;
     color: #fff;
     line-height: 1.6; }
     #mv .mv-copy p {
@@ -902,7 +903,7 @@ footer {
     box-shadow: 2px 2px 0 0 #000b4d; }
 
   #mv .mv-logo {
-    width: 80%;
+    width: 90%;
     padding: 32px 0 0 12px; }
   #mv .mv-bg {
     height: 70vh; }
