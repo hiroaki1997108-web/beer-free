@@ -282,12 +282,12 @@ section {
       width: fit-content;
       margin: auto; }
       #mv .mv-text p.strong {
-        background: linear-gradient(#ffda6c, #ffbf00 50%);
+        background: linear-gradient(#ffe79f, #ffbf00 50%);
         margin: 0.2em auto 0.4em;
         padding: 0 0.4em;
         text-shadow: 1px 1px 0 #fff; }
       #mv .mv-text p.strong2 {
-        background: linear-gradient(#ffda6c, #ffbf00 50%);
+        background: linear-gradient(#ffe79f, #ffbf00 50%);
         padding-left: 0.4em;
         padding-right: 0.1em;
         text-shadow: 1px 1px 0 #fff; }
@@ -411,7 +411,8 @@ section {
       transform: translate(0, -50%);
       font-size: 0.8em; }
     .side-fixed .side-btn:hover {
-      background: #000b4d;
+      background: linear-gradient(#e0a6ff, #8800d7 80%);
+      text-shadow: 2px 2px 0 #430279;
       color: #fff; }
   .side-fixed .close-btn {
     cursor: pointer;
@@ -539,7 +540,8 @@ section {
     box-shadow: 0 6px 0 0 #430279;
     transition: 0.2s;
     animation: ctabtn 2s linear infinite;
-    position: relative; }
+    position: relative;
+    text-shadow: 2px 2px 0 #430279; }
     #ticket-buy .cta-btn::before {
       content: "▶︎";
       position: absolute;
@@ -547,6 +549,9 @@ section {
       right: 10%;
       transform: translate(0, -50%);
       font-size: 0.8em; }
+    #ticket-buy .cta-btn:hover {
+      transform: scale(1.1);
+      animation: none; }
 
 .main-btn {
   box-sizing: border-box;
@@ -589,9 +594,9 @@ section {
   border-bottom: solid 4px #000b4d;
   text-shadow: 4px 4px 0 #0b4013; }
   .sec-title .st-sub {
-    border: solid 3px #0b4013;
+    border: solid 2.5px #0b4013;
     border-radius: 1em;
-    padding: 0em 1em;
+    padding: 1px 1em 0;
     color: #0b4013;
     background: #ffc107;
     text-shadow: none; }
