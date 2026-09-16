@@ -717,8 +717,6 @@ section {
   max-width: 900px;
   width: 100%;
   margin: 0 auto; }
-  .cont-slider .swiper-wrapper {
-    transition-timing-function: linear !important; }
   .cont-slider .swiper-slide {
     box-sizing: border-box;
     border-radius: 1em;
@@ -887,11 +885,35 @@ footer {
   .sp-block {
     display: none; }
 
+  #mv .mv-info {
+    padding: 80px 1em 0; }
+
   .lead {
     text-align: left;
     max-width: 600px;
     width: fit-content;
     margin: auto; }
+
+  #ticket-buy {
+    padding: 100px 0 80px; }
+
+  #brewery {
+    padding: 40px 0; }
+
+  #contents {
+    padding: 40px 0 180px; }
+
+  #access {
+    padding: 100px 0 60px; }
+
+  #qa {
+    padding: 200px 0 180px; }
+
+  #sponsor {
+    padding: 120px 0 140px; }
+
+  #contact {
+    padding: 160px 0 100px; }
 
   footer {
     padding: 100px 0 160px; }
@@ -911,7 +933,7 @@ footer {
     width: 80%;
     padding: 32px 0 0 12px; }
   #mv .mv-bg {
-    height: 70vh; }
+    height: 75vh; }
   #mv .mv-copy {
     bottom: 15%; }
     #mv .mv-copy p {
@@ -1051,7 +1073,7 @@ footer {
       height: 400px; }
 
   #qa {
-    padding: 120px 0 100px; }
+    padding: 140px 0 100px; }
     #qa .qa-list .item {
       box-shadow: 3px 3px 0px #000b4d; }
 
