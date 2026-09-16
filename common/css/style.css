@@ -1047,14 +1047,14 @@ footer {
   #brewery {
     padding: 20px 0; }
     #brewery .lead {
-      padding: 1.5em 0.3em 2em; }
+      padding: 2em 0.3em; }
     #brewery .brewery-list {
       margin: 0 auto 30px; }
 
   #contents {
     padding: 20px 0 120px; }
     #contents .lead {
-      padding: 1.5em 0.3em 2em; }
+      padding: 2em 0.3em; }
     #contents .pickup-head {
       padding: 5px 20px;
       top: 25px;
