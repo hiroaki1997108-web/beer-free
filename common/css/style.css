@@ -320,7 +320,7 @@ section {
       #mv .mv-text .circles li {
         display: block;
         position: absolute;
-        border: solid 3px #000b4d;
+        border: solid 2px #000b4d;
         border-radius: 50%;
         overflow: hidden; }
         #mv .mv-text .circles li img {
