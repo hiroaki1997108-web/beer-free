@@ -96,6 +96,15 @@ button {
     @include font-base(1.5em, 600);
   }
 }
+.ft-bnr {
+  .fb-text {
+    @include font-base(1.25em, 600);
+  }
+  .fb-btn {
+    @include font-base(1.5em, 600);
+  }
+}
+
 footer {
   .sns-head {
     font-size: 1.5em;
@@ -176,6 +185,14 @@ footer {
   #qa {
     .qa-list {
       font-size: 14px;
+    }
+  }
+  .ft-bnr {
+    .fb-text {
+      font-size: 16px;
+    }
+    .fb-btn {
+      font-size: 18px;
     }
   }
   #contact {

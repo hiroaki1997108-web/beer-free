@@ -140,6 +140,19 @@ button {
   font-family: "Zen Maru Gothic", sans-serif;
   font-family: "M PLUS Rounded 1c", sans-serif; }
 
+.ft-bnr .fb-text {
+  font-size: 1.25em;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 600;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif; }
+.ft-bnr .fb-btn {
+  font-size: 1.5em;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 600;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif; }
+
 footer .sns-head {
   font-size: 1.5em; }
 
@@ -196,6 +209,11 @@ footer .sns-head {
 
   #qa .qa-list {
     font-size: 14px; }
+
+  .ft-bnr .fb-text {
+    font-size: 16px; }
+  .ft-bnr .fb-btn {
+    font-size: 18px; }
 
   #contact .contact-lead {
     font-weight: 600; } }
@@ -502,6 +520,41 @@ section {
   100% {
     top: 0;
     opacity: 0; } }
+@keyframes ctabtn {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.05); }
+  100% {
+    transform: scale(1); } }
+.cta-btn {
+  box-sizing: border-box;
+  display: block;
+  max-width: 420px;
+  width: 100%;
+  margin: auto;
+  padding: 0.8em 1em 0.8em 0.4em;
+  background: linear-gradient(#e0a6ff, #8800d7 80%);
+  color: #fff;
+  text-align: center;
+  border-radius: 2em;
+  border: solid 3px #430279;
+  box-shadow: 0 6px 0 0 #430279;
+  transition: 0.2s;
+  animation: ctabtn 2s linear infinite;
+  position: relative;
+  text-shadow: 2px 2px 0 #430279; }
+  .cta-btn::before {
+    content: "▶︎";
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translate(0, -50%);
+    font-size: 0.8em; }
+  .cta-btn:hover {
+    transform: scale(1.1);
+    animation: none; }
+
 #ticket-buy {
   background: #ffc107;
   background: linear-gradient(#ffd452, #ffc107 50%);
@@ -518,40 +571,6 @@ section {
     width: fit-content;
     margin: 0em auto 1em;
     line-height: 2; }
-@keyframes ctabtn {
-  0% {
-    transform: scale(1); }
-  50% {
-    transform: scale(1.05); }
-  100% {
-    transform: scale(1); } }
-  #ticket-buy .cta-btn {
-    box-sizing: border-box;
-    display: block;
-    max-width: 420px;
-    width: 100%;
-    margin: auto;
-    padding: 0.8em 1em 0.8em 0.4em;
-    background: linear-gradient(#e0a6ff, #8800d7 80%);
-    color: #fff;
-    text-align: center;
-    border-radius: 2em;
-    border: solid 3px #430279;
-    box-shadow: 0 6px 0 0 #430279;
-    transition: 0.2s;
-    animation: ctabtn 2s linear infinite;
-    position: relative;
-    text-shadow: 2px 2px 0 #430279; }
-    #ticket-buy .cta-btn::before {
-      content: "▶︎";
-      position: absolute;
-      top: 50%;
-      right: 10%;
-      transform: translate(0, -50%);
-      font-size: 0.8em; }
-    #ticket-buy .cta-btn:hover {
-      transform: scale(1.1);
-      animation: none; }
 
 .main-btn {
   box-sizing: border-box;
@@ -825,21 +844,57 @@ section {
         border: solid 2px #000b4d; }
 
 .ft-bnr {
-  padding: 140px 0;
+  padding: 100px 20px;
   position: relative;
   background: url(../images/bnr-bg.jpg);
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-position: top;
+  background-color: rgba(0, 0, 0, 0.2);
   background-blend-mode: darken; }
-  .ft-bnr .cta-bnr {
+  .ft-bnr .fb-text {
+    color: #000b4d;
+    text-align: center;
+    line-height: 1.8;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2em 2em 1.8em;
+    width: fit-content;
+    margin: 0 auto 3em;
+    border: solid 2px #000b4d;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 3px 3px 0 0 #000b4d; }
+    .ft-bnr .fb-text::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 20px solid #000b4d; }
+  .ft-bnr .fb-btn {
+    box-sizing: border-box;
     display: block;
-    max-width: 600px;
-    width: 90%;
+    max-width: 420px;
+    width: 100%;
     margin: auto;
-    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.2);
-    border-radius: 10px; }
-    .ft-bnr .cta-bnr img {
-      border-radius: 10px; }
+    padding: 0.8em 1em 0.8em 0.4em;
+    background: linear-gradient(#e0a6ff, #8800d7 80%);
+    color: #fff;
+    text-align: center;
+    border-radius: 2em;
+    border: solid 3px #430279;
+    box-shadow: 0 6px 0 0 #430279;
+    transition: 0.2s;
+    position: relative;
+    text-shadow: 2px 2px 0 #430279; }
+    .ft-bnr .fb-btn:hover {
+      transform: scale(1.1);
+      animation: none; }
 
 #contact {
   padding: 200px 0 120px; }
@@ -1020,14 +1075,16 @@ footer {
     .sec-title2 .sub {
       bottom: -15px; }
 
+  .cta-btn {
+    width: 90%;
+    border: solid 2px #430279;
+    box-shadow: 0 4px 0 0 #430279; }
+
   #ticket-buy {
     padding: 80px 0 60px; }
     #ticket-buy .text {
-      margin: 0 auto; }
-    #ticket-buy .cta-btn {
-      max-width: 300px;
-      border: solid 2px #430279;
-      box-shadow: 0 4px 0 0 #430279; }
+      margin: 0 auto;
+      padding: 2em 0; }
 
   #event {
     padding: 20px 0; }
@@ -1088,7 +1145,13 @@ footer {
           box-shadow: 3px 3px 0 0 #000b4d; }
 
   .ft-bnr {
-    padding: 60px 0; }
+    padding: 60px 10px; }
+    .ft-bnr .fb-text {
+      padding: 1em; }
+    .ft-bnr .fb-btn {
+      width: 90%;
+      border: solid 2px #430279;
+      box-shadow: 0 4px 0 0 #430279; }
 
   #contact {
     padding: 100px 0 80px; }
