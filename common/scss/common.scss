@@ -90,13 +90,13 @@ section {
     text-align: center;
     color: $sub;
     position: relative;
-    padding: 2em 0;
+    padding: 2em 0 3em;
     p {
       width: fit-content;
       margin: auto;
       &.strong {
         background: linear-gradient(#ffe79f, #ffbf00 50%);
-        margin: 0.2em auto 0.4em;
+        margin: 0.4em auto 0.6em;
         padding: 0 0.4em;
         text-shadow: 1px 1px 0 #fff;
       }
@@ -118,9 +118,11 @@ section {
       li {
         display: block;
         position: absolute;
-        border: solid 2px $sub;
+        border: solid 1.5px $sub;
         border-radius: 50%;
         overflow: hidden;
+        aspect-ratio: 1/1;
+        box-shadow: 1px 1px 0 0 $sub;
         img {
           width: 100%;
           height: 100%;
@@ -128,46 +130,46 @@ section {
         }
       }
       li:nth-child(1) {
-        top: 30%;
+        top: 25%;
         left: 0%;
-        width: 80px;
-        height: 80px;
+        max-width: 150px;
+        width: 16%;
       }
       li:nth-child(2) {
         top: 10%;
         left: 15%;
-        width: 30px;
-        height: 30px;
+        max-width: 40px;
+        width: 4%;
       }
       li:nth-child(3) {
-        top: 70%;
+        top: 65%;
         left: 15%;
-        width: 60px;
-        height: 60px;
+        max-width: 70px;
+        width: 8%;
       }
       li:nth-child(4) {
-        top: 75%;
+        top: 65%;
         right: 15%;
-        width: 60px;
-        height: 60px;
+        max-width: 100px;
+        width: 13%;
       }
       li:nth-child(5) {
         top: 10%;
         right: 5%;
-        width: 90px;
-        height: 90px;
+        max-width: 130px;
+        width: 14%;
       }
       li:nth-child(6) {
         top: 50%;
-        right: 0%;
-        width: 40px;
-        height: 40px;
+        right: 1%;
+        max-width: 50px;
+        width: 4%;
       }
       li:nth-child(7) {
         top: 65%;
         right: 4%;
-        width: 10px;
-        height: 10px;
+        max-width: 20px;
+        width: 2%;
       }
     }
   }
@@ -939,39 +941,24 @@ footer {
     .mv-text {
       .circles {
         li {
-          border: solid 1.5px $sub;
+          border: solid 1px $sub;
         }
         li:nth-child(1) {
-          width: 50px;
-          height: 50px;
         }
         li:nth-child(2) {
-          width: 10px;
-          height: 10px;
+          left: 12%;
         }
         li:nth-child(3) {
-          width: 30px;
-          height: 30px;
         }
         li:nth-child(4) {
-          top: 70%;
-          width: 40px;
-          height: 40px;
+          right: 12%;
         }
         li:nth-child(5) {
-          right: 0;
-          width: 50px;
-          height: 50px;
+          right: 0.5%;
         }
         li:nth-child(6) {
-          width: 20px;
-          height: 20px;
         }
         li:nth-child(7) {
-          top: 65%;
-          right: 4%;
-          width: 5px;
-          height: 5px;
         }
       }
     }
