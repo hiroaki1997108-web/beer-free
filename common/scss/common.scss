@@ -207,6 +207,8 @@ section {
     margin: 0 1em 0.25em;
     .num {
       padding: 0 2px;
+      position: relative;
+      top: 1px;
     }
     &::before {
       content: "";
@@ -765,13 +767,14 @@ section {
   background-color: rgba(0, 0, 0, 0.2);
   background-blend-mode: darken;
   .fb-text {
+    box-sizing: border-box;
     color: $sub;
     text-align: center;
     line-height: 1.8;
     background: rgba(#fff, 0.8);
     padding: 2em 2em 1.8em;
     width: fit-content;
-    margin: 0 auto 3em;
+    margin: 0 auto 2em;
     border: solid 2px $sub;
     border-radius: 20px;
     position: relative;
@@ -789,6 +792,9 @@ section {
       border-left: 20px solid transparent;
       border-right: 20px solid transparent;
       border-top: 20px solid $sub;
+    }
+    .sp-block {
+      display: none;
     }
   }
   .fb-btn {
@@ -1114,6 +1120,10 @@ footer {
     padding: 60px 10px;
     .fb-text {
       padding: 1em;
+      width: 100%;
+      .sp-block {
+        display: block;
+      }
     }
     .fb-btn {
       width: 90%;

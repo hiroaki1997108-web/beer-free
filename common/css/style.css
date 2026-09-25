@@ -396,7 +396,9 @@ section {
     padding: 0 1em;
     margin: 0 1em 0.25em; }
     .side-fixed .text .num {
-      padding: 0 2px; }
+      padding: 0 2px;
+      position: relative;
+      top: 1px; }
     .side-fixed .text::before {
       content: "";
       position: absolute;
@@ -857,13 +859,14 @@ section {
   background-color: rgba(0, 0, 0, 0.2);
   background-blend-mode: darken; }
   .ft-bnr .fb-text {
+    box-sizing: border-box;
     color: #000b4d;
     text-align: center;
     line-height: 1.8;
     background: rgba(255, 255, 255, 0.8);
     padding: 2em 2em 1.8em;
     width: fit-content;
-    margin: 0 auto 3em;
+    margin: 0 auto 2em;
     border: solid 2px #000b4d;
     border-radius: 20px;
     position: relative;
@@ -881,6 +884,8 @@ section {
       border-left: 20px solid transparent;
       border-right: 20px solid transparent;
       border-top: 20px solid #000b4d; }
+    .ft-bnr .fb-text .sp-block {
+      display: none; }
   .ft-bnr .fb-btn {
     box-sizing: border-box;
     display: block;
@@ -1133,7 +1138,10 @@ footer {
   .ft-bnr {
     padding: 60px 10px; }
     .ft-bnr .fb-text {
-      padding: 1em; }
+      padding: 1em;
+      width: 100%; }
+      .ft-bnr .fb-text .sp-block {
+        display: block; }
     .ft-bnr .fb-btn {
       width: 90%;
       border: solid 2px #430279;
